@@ -17,19 +17,19 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="漂流书是指一本书的拥有者将自己不再阅读的书，贴上特定标签放到公共场所，让捡到的人无偿阅读，捡到者再用类似的方式将书传给其他素不相识的人。这是建立在高度自觉基础上的阅读“游戏”。" lineBreakMode="tailTruncation" numberOfLines="5" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Zyg-p1-Mgh">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="漂流书是指一本书的拥有者将自己不再阅读的书，贴上特定标签放到公共场所，让捡到的人无偿阅读，捡到者再用类似的方式将书传给其他素不相识的人。这是建立在高度自觉基础上的阅读“游戏”。" lineBreakMode="tailTruncation" numberOfLines="5" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Zyg-p1-Mgh">
                                 <rect key="frame" x="40" y="80" width="520" height="54"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="15"/>
                                 <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="请发邮件至gongmingqm10@gmail.com申请新账号，注明邮件主题“漂流账号申请”，邮件内部请填写申请理由。" lineBreakMode="tailTruncation" numberOfLines="5" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="P6d-R2-vSz">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="请发邮件至gongmingqm10@gmail.com申请新账号，注明邮件主题“漂流账号申请”，邮件内部请填写申请理由。" lineBreakMode="tailTruncation" numberOfLines="5" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="P6d-R2-vSz">
                                 <rect key="frame" x="40" y="142" width="520" height="36"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="15"/>
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="deB-ng-C7W">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="deB-ng-C7W">
                                 <rect key="frame" x="40" y="205" width="520" height="40"/>
                                 <color key="backgroundColor" red="0.047058823530000002" green="0.37254901959999998" blue="0.99607843139999996" alpha="1" colorSpace="calibratedRGB"/>
                                 <constraints>
@@ -58,7 +58,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="8kF-dm-En1" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1861" y="-331"/>
+            <point key="canvasLocation" x="1929" y="-341"/>
         </scene>
         <!--登录账号-->
         <scene sceneID="tne-QT-ifu">
@@ -92,6 +92,9 @@
                                 <state key="normal" title="登 录">
                                     <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 </state>
+                                <connections>
+                                    <action selector="loginAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="5si-AU-Eb9"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="k8R-GT-PEE">
                                 <rect key="frame" x="425" y="234" width="135" height="30"/>
@@ -127,10 +130,112 @@
                     <navigationItem key="navigationItem" title="登录账号" id="tJW-P4-lGV">
                         <barButtonItem key="backBarButtonItem" title="登录" id="6aj-VE-2lJ"/>
                     </navigationItem>
+                    <connections>
+                        <outlet property="emailTextField" destination="aQ8-Ik-4Kd" id="ovY-ki-N1J"/>
+                        <outlet property="passwordTextField" destination="NU7-wo-EVZ" id="NEM-9b-eAz"/>
+                        <segue destination="UbL-hM-5VZ" kind="presentation" identifier="HomeSegue" id="WRu-l8-wza"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1136" y="-331"/>
+        </scene>
+        <!--受漂-->
+        <scene sceneID="0Qw-gs-W3x">
+            <objects>
+                <viewController id="dLy-Ul-KjX" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="P2r-F8-f2a"/>
+                        <viewControllerLayoutGuide type="bottom" id="5oh-ZX-Cqf"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="kAb-PU-qWk">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="受漂" image="IconBook" id="Rg5-Hl-OIM"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="yac-H2-n3G" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="745" y="1247"/>
+        </scene>
+        <!--漂信-->
+        <scene sceneID="QLa-Mg-uUB">
+            <objects>
+                <viewController id="Ngc-fm-9Nw" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="DqN-Aa-fDZ"/>
+                        <viewControllerLayoutGuide type="bottom" id="OT0-f6-6jG"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="Sfg-Vg-B6F">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="漂信" image="IconChat" id="bMd-KO-36T"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="IjV-9Y-rO1" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1415" y="1244"/>
+        </scene>
+        <!--我的-->
+        <scene sceneID="jLM-tl-xdq">
+            <objects>
+                <viewController id="3ll-wa-I5h" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="hlH-GN-HCO"/>
+                        <viewControllerLayoutGuide type="bottom" id="Mbu-yV-cch"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="lto-kt-jav">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="我的" image="IconMine" id="IP5-UM-M2W"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="i63-N8-EPA" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2073" y="1238"/>
+        </scene>
+        <!--发现-->
+        <scene sceneID="BWT-Q3-fLQ">
+            <objects>
+                <viewController id="m3Z-DF-e2z" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="C5x-Sk-DGy"/>
+                        <viewControllerLayoutGuide type="bottom" id="gRo-aH-w9G"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="o0G-Ux-ohy">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="发现" image="IconDiscovery" id="NXV-84-NYg"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="HjO-JC-Cyk" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-29" y="1247"/>
+        </scene>
+        <!--Tab Bar Controller-->
+        <scene sceneID="pVu-T1-hNW">
+            <objects>
+                <tabBarController id="UbL-hM-5VZ" sceneMemberID="viewController">
+                    <nil key="simulatedBottomBarMetrics"/>
+                    <tabBar key="tabBar" contentMode="scaleToFill" id="GSO-DP-9eM">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="49"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                    </tabBar>
+                    <connections>
+                        <segue destination="m3Z-DF-e2z" kind="relationship" relationship="viewControllers" id="PKl-6b-cBO"/>
+                        <segue destination="dLy-Ul-KjX" kind="relationship" relationship="viewControllers" id="RJS-gf-ZuP"/>
+                        <segue destination="Ngc-fm-9Nw" kind="relationship" relationship="viewControllers" id="D2K-e1-0ZU"/>
+                        <segue destination="3ll-wa-I5h" kind="relationship" relationship="viewControllers" id="hjd-wo-hGE"/>
+                    </connections>
+                </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ZPq-xo-BXS" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1136" y="430"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="iBx-fe-aQh">
@@ -150,5 +255,30 @@
             </objects>
             <point key="canvasLocation" x="443" y="-331"/>
         </scene>
+        <!--受漂-->
+        <scene sceneID="RDr-iq-vsM">
+            <objects>
+                <viewController id="1zj-Um-2an" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="RYJ-qR-YY9"/>
+                        <viewControllerLayoutGuide type="bottom" id="R1c-bp-gTU"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="tUD-uf-xeT">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="受漂" image="IconBook" id="OdA-b4-xws"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="SxL-LR-sWm" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="745" y="1247"/>
+        </scene>
     </scenes>
+    <resources>
+        <image name="IconBook" width="23" height="21"/>
+        <image name="IconChat" width="24" height="21"/>
+        <image name="IconDiscovery" width="24" height="24"/>
+        <image name="IconMine" width="24" height="24"/>
+    </resources>
 </document>

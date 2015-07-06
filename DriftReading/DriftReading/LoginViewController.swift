@@ -10,7 +10,25 @@ import UIKit
 
 class LoginViewController: ViewController {
     
+    @IBOutlet weak var emailTextField: UITextField!
+    @IBOutlet weak var passwordTextField: UITextField!
+    
     override func viewDidLoad() {
         
     }
+    
+    @IBAction func loginAction(sender: AnyObject) {
+        let email = emailTextField.text
+        let password = passwordTextField.text
+        
+        if email == "admin" && password == "123456" {
+            self.performSegueWithIdentifier("HomeSegue", sender: self)
+        } else {
+            let alertController = UIAlertController(title: "提示", message: "用户名或密码错误", preferredStyle: UIAlertControllerStyle.Alert)
+            alertController.addAction(UIAlertAction(title: "确定", style: UIAlertActionStyle.Default, handler: nil))
+            presentViewController(alertController, animated: true, completion: nil)
+        }
+        
+    }
+    
 }
