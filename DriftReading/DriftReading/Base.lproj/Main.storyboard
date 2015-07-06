@@ -1,13 +1,70 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="8121.17" systemVersion="14E46" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="8121.17" systemVersion="14E46" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="tGK-uq-mNx">
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="8101.14"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
+        <!--申请账号-->
+        <scene sceneID="ONk-mQ-Wv3">
+            <objects>
+                <viewController id="EVz-u8-8jM" customClass="RegisterViewController" customModule="DriftReading" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="xzw-81-1dL"/>
+                        <viewControllerLayoutGuide type="bottom" id="xVS-tF-Iry"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="egn-SR-HnZ">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="漂流书是指一本书的拥有者将自己不再阅读的书，贴上特定标签放到公共场所，让捡到的人无偿阅读，捡到者再用类似的方式将书传给其他素不相识的人。这是建立在高度自觉基础上的阅读“游戏”。" lineBreakMode="tailTruncation" numberOfLines="5" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Zyg-p1-Mgh">
+                                <rect key="frame" x="40" y="80" width="520" height="54"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="请发邮件至gongmingqm10@gmail.com申请新账号，注明邮件主题“漂流账号申请”，邮件内部请填写申请理由。" lineBreakMode="tailTruncation" numberOfLines="5" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="P6d-R2-vSz">
+                                <rect key="frame" x="40" y="142" width="520" height="36"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="deB-ng-C7W">
+                                <rect key="frame" x="40" y="205" width="520" height="40"/>
+                                <color key="backgroundColor" red="0.047058823530000002" green="0.37254901959999998" blue="0.99607843139999996" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="Jf9-GP-2JH"/>
+                                </constraints>
+                                <color key="tintColor" red="0.80000001190000003" green="0.80000001190000003" blue="0.80000001190000003" alpha="1" colorSpace="calibratedRGB"/>
+                                <state key="normal" title="去邮箱申请">
+                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstItem="P6d-R2-vSz" firstAttribute="top" secondItem="Zyg-p1-Mgh" secondAttribute="bottom" constant="8" id="2hQ-yO-ZSH"/>
+                            <constraint firstItem="deB-ng-C7W" firstAttribute="leading" secondItem="P6d-R2-vSz" secondAttribute="leading" id="5s5-xC-b7v"/>
+                            <constraint firstItem="Zyg-p1-Mgh" firstAttribute="top" secondItem="xzw-81-1dL" secondAttribute="bottom" constant="16" id="8YG-8Y-NOk"/>
+                            <constraint firstItem="deB-ng-C7W" firstAttribute="trailing" secondItem="P6d-R2-vSz" secondAttribute="trailing" id="Gfv-de-EV1"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="Zyg-p1-Mgh" secondAttribute="trailing" constant="20" id="MtU-m7-8Up"/>
+                            <constraint firstItem="Zyg-p1-Mgh" firstAttribute="leading" secondItem="egn-SR-HnZ" secondAttribute="leadingMargin" constant="20" id="OXt-Yd-smj"/>
+                            <constraint firstItem="P6d-R2-vSz" firstAttribute="leading" secondItem="egn-SR-HnZ" secondAttribute="leadingMargin" constant="20" id="VTv-SC-Uzr"/>
+                            <constraint firstItem="deB-ng-C7W" firstAttribute="top" secondItem="P6d-R2-vSz" secondAttribute="bottom" constant="27" id="apH-zP-kVB"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="P6d-R2-vSz" secondAttribute="trailing" constant="20" id="m4C-oE-mug"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="申请账号" id="yVy-VQ-aGb"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="8kF-dm-En1" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1861" y="-331"/>
+        </scene>
+        <!--登录账号-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="DriftReading" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="LoginViewController" customModule="DriftReading" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
                         <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
@@ -15,11 +72,92 @@
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="登录" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="CC0-1t-hzJ">
+                                <rect key="frame" x="264" y="79" width="72" height="43"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="36"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="漂流阅读" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bDQ-UO-89t">
+                                <rect key="frame" x="270" y="130" width="60" height="18"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="邮箱" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="aQ8-Ik-4Kd">
+                                <rect key="frame" x="40" y="172" width="520" height="30"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="密码" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="NU7-wo-EVZ">
+                                <rect key="frame" x="40" y="218" width="520" height="30"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" secureTextEntry="YES"/>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="34R-qe-geB">
+                                <rect key="frame" x="40" y="304" width="520" height="40"/>
+                                <color key="backgroundColor" red="0.047058823529411764" green="0.37254901960784315" blue="0.99607843137254903" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="GHs-qW-Xvp"/>
+                                </constraints>
+                                <color key="tintColor" red="0.80000001192092896" green="0.80000001192092896" blue="0.80000001192092896" alpha="1" colorSpace="calibratedRGB"/>
+                                <state key="normal" title="登 录">
+                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="k8R-GT-PEE">
+                                <rect key="frame" x="425" y="262" width="135" height="30"/>
+                                <state key="normal" title="没有账号，点击申请"/>
+                                <connections>
+                                    <segue destination="EVz-u8-8jM" kind="show" id="EVM-uw-J8R"/>
+                                </connections>
+                            </button>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="bDQ-UO-89t" firstAttribute="top" secondItem="CC0-1t-hzJ" secondAttribute="bottom" constant="8" id="2Es-Jk-OZK"/>
+                            <constraint firstItem="NU7-wo-EVZ" firstAttribute="top" secondItem="aQ8-Ik-4Kd" secondAttribute="bottom" constant="16" id="3F8-Bs-72c"/>
+                            <constraint firstItem="k8R-GT-PEE" firstAttribute="trailing" secondItem="NU7-wo-EVZ" secondAttribute="trailing" id="3Fe-tS-a92"/>
+                            <constraint firstItem="k8R-GT-PEE" firstAttribute="top" secondItem="NU7-wo-EVZ" secondAttribute="bottom" constant="14" id="4i6-UC-pqZ"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="34R-qe-geB" secondAttribute="trailing" constant="20" id="5au-Gg-uq9"/>
+                            <constraint firstItem="34R-qe-geB" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="20" id="9Gx-Rp-2zP"/>
+                            <constraint firstItem="CC0-1t-hzJ" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="bottom" multiplier="1/6" id="LSq-rB-7Im"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="aQ8-Ik-4Kd" secondAttribute="trailing" constant="20" id="URD-Ze-bUE"/>
+                            <constraint firstItem="34R-qe-geB" firstAttribute="top" secondItem="k8R-GT-PEE" secondAttribute="bottom" constant="12" id="WRM-9Y-tJ8"/>
+                            <constraint firstItem="NU7-wo-EVZ" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="20" id="aMw-5i-gfl"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="NU7-wo-EVZ" secondAttribute="trailing" constant="20" id="bJN-BI-o4c"/>
+                            <constraint firstItem="bDQ-UO-89t" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="q0a-Ne-3qV"/>
+                            <constraint firstItem="aQ8-Ik-4Kd" firstAttribute="top" secondItem="bDQ-UO-89t" secondAttribute="bottom" constant="24" id="rDr-oH-boV"/>
+                            <constraint firstItem="CC0-1t-hzJ" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="tcX-sv-vDx"/>
+                            <constraint firstItem="aQ8-Ik-4Kd" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="20" id="yVP-m1-QGE"/>
+                        </constraints>
                     </view>
+                    <navigationItem key="navigationItem" title="登录账号" id="tJW-P4-lGV">
+                        <barButtonItem key="backBarButtonItem" title="登录" id="6aj-VE-2lJ"/>
+                    </navigationItem>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="1136" y="-331"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="iBx-fe-aQh">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="tGK-uq-mNx" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="wRS-4K-jrY">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="cbQ-W7-kzg"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="cWp-Ff-aLd" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="443" y="-331"/>
         </scene>
     </scenes>
 </document>

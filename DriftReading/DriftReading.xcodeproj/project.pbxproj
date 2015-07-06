@@ -14,6 +14,8 @@
 		3509ECC21B4A89BB00BAECF2 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3509ECC01B4A89BB00BAECF2 /* LaunchScreen.storyboard */; };
 		3509ECCD1B4A89BB00BAECF2 /* DriftReadingTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3509ECCC1B4A89BB00BAECF2 /* DriftReadingTests.swift */; };
 		3509ECD81B4A89BC00BAECF2 /* DriftReadingUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3509ECD71B4A89BC00BAECF2 /* DriftReadingUITests.swift */; };
+		3509ECE71B4AB45D00BAECF2 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3509ECE61B4AB45D00BAECF2 /* LoginViewController.swift */; };
+		3509ECE91B4AB4B400BAECF2 /* RegisterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3509ECE81B4AB4B400BAECF2 /* RegisterViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +49,8 @@
 		3509ECD31B4A89BC00BAECF2 /* DriftReadingUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DriftReadingUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		3509ECD71B4A89BC00BAECF2 /* DriftReadingUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DriftReadingUITests.swift; sourceTree = "<group>"; };
 		3509ECD91B4A89BC00BAECF2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3509ECE61B4AB45D00BAECF2 /* LoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		3509ECE81B4AB4B400BAECF2 /* RegisterViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RegisterViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -97,6 +101,7 @@
 		3509ECB61B4A89BB00BAECF2 /* DriftReading */ = {
 			isa = PBXGroup;
 			children = (
+				3509ECE51B4AB44600BAECF2 /* controllers */,
 				3509ECB71B4A89BB00BAECF2 /* AppDelegate.swift */,
 				3509ECB91B4A89BB00BAECF2 /* ViewController.swift */,
 				3509ECBB1B4A89BB00BAECF2 /* Main.storyboard */,
@@ -123,6 +128,15 @@
 				3509ECD91B4A89BC00BAECF2 /* Info.plist */,
 			);
 			path = DriftReadingUITests;
+			sourceTree = "<group>";
+		};
+		3509ECE51B4AB44600BAECF2 /* controllers */ = {
+			isa = PBXGroup;
+			children = (
+				3509ECE61B4AB45D00BAECF2 /* LoginViewController.swift */,
+				3509ECE81B4AB4B400BAECF2 /* RegisterViewController.swift */,
+			);
+			name = controllers;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -255,8 +269,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3509ECE71B4AB45D00BAECF2 /* LoginViewController.swift in Sources */,
 				3509ECBA1B4A89BB00BAECF2 /* ViewController.swift in Sources */,
 				3509ECB81B4A89BB00BAECF2 /* AppDelegate.swift in Sources */,
+				3509ECE91B4AB4B400BAECF2 /* RegisterViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
