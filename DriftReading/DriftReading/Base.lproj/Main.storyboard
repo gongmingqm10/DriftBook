@@ -162,7 +162,7 @@
         <!--漂信-->
         <scene sceneID="QLa-Mg-uUB">
             <objects>
-                <viewController id="Ngc-fm-9Nw" sceneMemberID="viewController">
+                <viewController id="Ngc-fm-9Nw" customClass="MessageViewController" customModule="DriftReading" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="DqN-Aa-fDZ"/>
                         <viewControllerLayoutGuide type="bottom" id="OT0-f6-6jG"/>
@@ -181,7 +181,7 @@
         <!--我的-->
         <scene sceneID="jLM-tl-xdq">
             <objects>
-                <viewController id="3ll-wa-I5h" sceneMemberID="viewController">
+                <viewController id="3ll-wa-I5h" customClass="MineViewController" customModule="DriftReading" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="hlH-GN-HCO"/>
                         <viewControllerLayoutGuide type="bottom" id="Mbu-yV-cch"/>
@@ -200,7 +200,7 @@
         <!--发现-->
         <scene sceneID="BWT-Q3-fLQ">
             <objects>
-                <viewController id="m3Z-DF-e2z" sceneMemberID="viewController">
+                <viewController id="m3Z-DF-e2z" customClass="DiscoveryViewController" customModule="DriftReading" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="C5x-Sk-DGy"/>
                         <viewControllerLayoutGuide type="bottom" id="gRo-aH-w9G"/>
@@ -254,25 +254,6 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="cWp-Ff-aLd" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="443" y="-331"/>
-        </scene>
-        <!--受漂-->
-        <scene sceneID="RDr-iq-vsM">
-            <objects>
-                <viewController id="1zj-Um-2an" sceneMemberID="viewController">
-                    <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="RYJ-qR-YY9"/>
-                        <viewControllerLayoutGuide type="bottom" id="R1c-bp-gTU"/>
-                    </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="tUD-uf-xeT">
-                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                    </view>
-                    <tabBarItem key="tabBarItem" title="受漂" image="IconBook" id="OdA-b4-xws"/>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="SxL-LR-sWm" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="745" y="1247"/>
         </scene>
     </scenes>
     <resources>
