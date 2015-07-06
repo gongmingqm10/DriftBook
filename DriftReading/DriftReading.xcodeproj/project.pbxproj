@@ -1,0 +1,504 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		3509ECB81B4A89BB00BAECF2 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3509ECB71B4A89BB00BAECF2 /* AppDelegate.swift */; };
+		3509ECBA1B4A89BB00BAECF2 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3509ECB91B4A89BB00BAECF2 /* ViewController.swift */; };
+		3509ECBD1B4A89BB00BAECF2 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3509ECBB1B4A89BB00BAECF2 /* Main.storyboard */; };
+		3509ECBF1B4A89BB00BAECF2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3509ECBE1B4A89BB00BAECF2 /* Assets.xcassets */; };
+		3509ECC21B4A89BB00BAECF2 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3509ECC01B4A89BB00BAECF2 /* LaunchScreen.storyboard */; };
+		3509ECCD1B4A89BB00BAECF2 /* DriftReadingTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3509ECCC1B4A89BB00BAECF2 /* DriftReadingTests.swift */; };
+		3509ECD81B4A89BC00BAECF2 /* DriftReadingUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3509ECD71B4A89BC00BAECF2 /* DriftReadingUITests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		3509ECC91B4A89BB00BAECF2 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 3509ECAC1B4A89BB00BAECF2 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 3509ECB31B4A89BB00BAECF2;
+			remoteInfo = DriftReading;
+		};
+		3509ECD41B4A89BC00BAECF2 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 3509ECAC1B4A89BB00BAECF2 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 3509ECB31B4A89BB00BAECF2;
+			remoteInfo = DriftReading;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		3509ECB41B4A89BB00BAECF2 /* DriftReading.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DriftReading.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		3509ECB71B4A89BB00BAECF2 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		3509ECB91B4A89BB00BAECF2 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		3509ECBC1B4A89BB00BAECF2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		3509ECBE1B4A89BB00BAECF2 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		3509ECC11B4A89BB00BAECF2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		3509ECC31B4A89BB00BAECF2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3509ECC81B4A89BB00BAECF2 /* DriftReadingTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DriftReadingTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		3509ECCC1B4A89BB00BAECF2 /* DriftReadingTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DriftReadingTests.swift; sourceTree = "<group>"; };
+		3509ECCE1B4A89BB00BAECF2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3509ECD31B4A89BC00BAECF2 /* DriftReadingUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DriftReadingUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		3509ECD71B4A89BC00BAECF2 /* DriftReadingUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DriftReadingUITests.swift; sourceTree = "<group>"; };
+		3509ECD91B4A89BC00BAECF2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		3509ECB11B4A89BB00BAECF2 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3509ECC51B4A89BB00BAECF2 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3509ECD01B4A89BC00BAECF2 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		3509ECAB1B4A89BB00BAECF2 = {
+			isa = PBXGroup;
+			children = (
+				3509ECB61B4A89BB00BAECF2 /* DriftReading */,
+				3509ECCB1B4A89BB00BAECF2 /* DriftReadingTests */,
+				3509ECD61B4A89BC00BAECF2 /* DriftReadingUITests */,
+				3509ECB51B4A89BB00BAECF2 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		3509ECB51B4A89BB00BAECF2 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				3509ECB41B4A89BB00BAECF2 /* DriftReading.app */,
+				3509ECC81B4A89BB00BAECF2 /* DriftReadingTests.xctest */,
+				3509ECD31B4A89BC00BAECF2 /* DriftReadingUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		3509ECB61B4A89BB00BAECF2 /* DriftReading */ = {
+			isa = PBXGroup;
+			children = (
+				3509ECB71B4A89BB00BAECF2 /* AppDelegate.swift */,
+				3509ECB91B4A89BB00BAECF2 /* ViewController.swift */,
+				3509ECBB1B4A89BB00BAECF2 /* Main.storyboard */,
+				3509ECBE1B4A89BB00BAECF2 /* Assets.xcassets */,
+				3509ECC01B4A89BB00BAECF2 /* LaunchScreen.storyboard */,
+				3509ECC31B4A89BB00BAECF2 /* Info.plist */,
+			);
+			path = DriftReading;
+			sourceTree = "<group>";
+		};
+		3509ECCB1B4A89BB00BAECF2 /* DriftReadingTests */ = {
+			isa = PBXGroup;
+			children = (
+				3509ECCC1B4A89BB00BAECF2 /* DriftReadingTests.swift */,
+				3509ECCE1B4A89BB00BAECF2 /* Info.plist */,
+			);
+			path = DriftReadingTests;
+			sourceTree = "<group>";
+		};
+		3509ECD61B4A89BC00BAECF2 /* DriftReadingUITests */ = {
+			isa = PBXGroup;
+			children = (
+				3509ECD71B4A89BC00BAECF2 /* DriftReadingUITests.swift */,
+				3509ECD91B4A89BC00BAECF2 /* Info.plist */,
+			);
+			path = DriftReadingUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		3509ECB31B4A89BB00BAECF2 /* DriftReading */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3509ECDC1B4A89BC00BAECF2 /* Build configuration list for PBXNativeTarget "DriftReading" */;
+			buildPhases = (
+				3509ECB01B4A89BB00BAECF2 /* Sources */,
+				3509ECB11B4A89BB00BAECF2 /* Frameworks */,
+				3509ECB21B4A89BB00BAECF2 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = DriftReading;
+			productName = DriftReading;
+			productReference = 3509ECB41B4A89BB00BAECF2 /* DriftReading.app */;
+			productType = "com.apple.product-type.application";
+		};
+		3509ECC71B4A89BB00BAECF2 /* DriftReadingTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3509ECDF1B4A89BC00BAECF2 /* Build configuration list for PBXNativeTarget "DriftReadingTests" */;
+			buildPhases = (
+				3509ECC41B4A89BB00BAECF2 /* Sources */,
+				3509ECC51B4A89BB00BAECF2 /* Frameworks */,
+				3509ECC61B4A89BB00BAECF2 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				3509ECCA1B4A89BB00BAECF2 /* PBXTargetDependency */,
+			);
+			name = DriftReadingTests;
+			productName = DriftReadingTests;
+			productReference = 3509ECC81B4A89BB00BAECF2 /* DriftReadingTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		3509ECD21B4A89BC00BAECF2 /* DriftReadingUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3509ECE21B4A89BC00BAECF2 /* Build configuration list for PBXNativeTarget "DriftReadingUITests" */;
+			buildPhases = (
+				3509ECCF1B4A89BC00BAECF2 /* Sources */,
+				3509ECD01B4A89BC00BAECF2 /* Frameworks */,
+				3509ECD11B4A89BC00BAECF2 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				3509ECD51B4A89BC00BAECF2 /* PBXTargetDependency */,
+			);
+			name = DriftReadingUITests;
+			productName = DriftReadingUITests;
+			productReference = 3509ECD31B4A89BC00BAECF2 /* DriftReadingUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		3509ECAC1B4A89BB00BAECF2 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0700;
+				ORGANIZATIONNAME = gongmingqm10;
+				TargetAttributes = {
+					3509ECB31B4A89BB00BAECF2 = {
+						CreatedOnToolsVersion = 7.0;
+					};
+					3509ECC71B4A89BB00BAECF2 = {
+						CreatedOnToolsVersion = 7.0;
+						TestTargetID = 3509ECB31B4A89BB00BAECF2;
+					};
+					3509ECD21B4A89BC00BAECF2 = {
+						CreatedOnToolsVersion = 7.0;
+						TestTargetID = 3509ECB31B4A89BB00BAECF2;
+					};
+				};
+			};
+			buildConfigurationList = 3509ECAF1B4A89BB00BAECF2 /* Build configuration list for PBXProject "DriftReading" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 3509ECAB1B4A89BB00BAECF2;
+			productRefGroup = 3509ECB51B4A89BB00BAECF2 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				3509ECB31B4A89BB00BAECF2 /* DriftReading */,
+				3509ECC71B4A89BB00BAECF2 /* DriftReadingTests */,
+				3509ECD21B4A89BC00BAECF2 /* DriftReadingUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		3509ECB21B4A89BB00BAECF2 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3509ECC21B4A89BB00BAECF2 /* LaunchScreen.storyboard in Resources */,
+				3509ECBF1B4A89BB00BAECF2 /* Assets.xcassets in Resources */,
+				3509ECBD1B4A89BB00BAECF2 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3509ECC61B4A89BB00BAECF2 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3509ECD11B4A89BC00BAECF2 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		3509ECB01B4A89BB00BAECF2 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3509ECBA1B4A89BB00BAECF2 /* ViewController.swift in Sources */,
+				3509ECB81B4A89BB00BAECF2 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3509ECC41B4A89BB00BAECF2 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3509ECCD1B4A89BB00BAECF2 /* DriftReadingTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3509ECCF1B4A89BC00BAECF2 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3509ECD81B4A89BC00BAECF2 /* DriftReadingUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		3509ECCA1B4A89BB00BAECF2 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 3509ECB31B4A89BB00BAECF2 /* DriftReading */;
+			targetProxy = 3509ECC91B4A89BB00BAECF2 /* PBXContainerItemProxy */;
+		};
+		3509ECD51B4A89BC00BAECF2 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 3509ECB31B4A89BB00BAECF2 /* DriftReading */;
+			targetProxy = 3509ECD41B4A89BC00BAECF2 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		3509ECBB1B4A89BB00BAECF2 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				3509ECBC1B4A89BB00BAECF2 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		3509ECC01B4A89BB00BAECF2 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				3509ECC11B4A89BB00BAECF2 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		3509ECDA1B4A89BC00BAECF2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		3509ECDB1B4A89BC00BAECF2 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		3509ECDD1B4A89BC00BAECF2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = DriftReading/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = org.gongmingqm10.DriftReading;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		3509ECDE1B4A89BC00BAECF2 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = DriftReading/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = org.gongmingqm10.DriftReading;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		3509ECE01B4A89BC00BAECF2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = DriftReadingTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = org.gongmingqm10.DriftReadingTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/DriftReading.app/DriftReading";
+			};
+			name = Debug;
+		};
+		3509ECE11B4A89BC00BAECF2 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = DriftReadingTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = org.gongmingqm10.DriftReadingTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/DriftReading.app/DriftReading";
+			};
+			name = Release;
+		};
+		3509ECE31B4A89BC00BAECF2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = DriftReadingUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = org.gongmingqm10.DriftReadingUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = DriftReading;
+				USES_XCTRUNNER = YES;
+			};
+			name = Debug;
+		};
+		3509ECE41B4A89BC00BAECF2 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = DriftReadingUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = org.gongmingqm10.DriftReadingUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = DriftReading;
+				USES_XCTRUNNER = YES;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		3509ECAF1B4A89BB00BAECF2 /* Build configuration list for PBXProject "DriftReading" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3509ECDA1B4A89BC00BAECF2 /* Debug */,
+				3509ECDB1B4A89BC00BAECF2 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		3509ECDC1B4A89BC00BAECF2 /* Build configuration list for PBXNativeTarget "DriftReading" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3509ECDD1B4A89BC00BAECF2 /* Debug */,
+				3509ECDE1B4A89BC00BAECF2 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		3509ECDF1B4A89BC00BAECF2 /* Build configuration list for PBXNativeTarget "DriftReadingTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3509ECE01B4A89BC00BAECF2 /* Debug */,
+				3509ECE11B4A89BC00BAECF2 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		3509ECE21B4A89BC00BAECF2 /* Build configuration list for PBXNativeTarget "DriftReadingUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3509ECE31B4A89BC00BAECF2 /* Debug */,
+				3509ECE41B4A89BC00BAECF2 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 3509ECAC1B4A89BB00BAECF2 /* Project object */;
+}
