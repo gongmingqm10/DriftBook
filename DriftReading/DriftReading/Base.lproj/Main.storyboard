@@ -3,7 +3,6 @@
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="8101.14"/>
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
-        <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
     </dependencies>
     <scenes>
         <!--申请账号-->
@@ -73,30 +72,18 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="登录" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="CC0-1t-hzJ">
-                                <rect key="frame" x="264" y="79" width="72" height="43"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="36"/>
-                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="漂流阅读" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bDQ-UO-89t">
-                                <rect key="frame" x="270" y="130" width="60" height="18"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="15"/>
-                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="邮箱" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="aQ8-Ik-4Kd">
-                                <rect key="frame" x="40" y="172" width="520" height="30"/>
+                                <rect key="frame" x="40" y="144" width="520" height="30"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="密码" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="NU7-wo-EVZ">
-                                <rect key="frame" x="40" y="218" width="520" height="30"/>
+                                <rect key="frame" x="40" y="190" width="520" height="30"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" secureTextEntry="YES"/>
                             </textField>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="34R-qe-geB">
-                                <rect key="frame" x="40" y="304" width="520" height="40"/>
+                                <rect key="frame" x="40" y="276" width="520" height="40"/>
                                 <color key="backgroundColor" red="0.047058823529411764" green="0.37254901960784315" blue="0.99607843137254903" alpha="1" colorSpace="calibratedRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="40" id="GHs-qW-Xvp"/>
@@ -107,29 +94,33 @@
                                 </state>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="k8R-GT-PEE">
-                                <rect key="frame" x="425" y="262" width="135" height="30"/>
+                                <rect key="frame" x="425" y="234" width="135" height="30"/>
                                 <state key="normal" title="没有账号，点击申请"/>
                                 <connections>
                                     <segue destination="EVz-u8-8jM" kind="show" id="EVM-uw-J8R"/>
                                 </connections>
                             </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="漂流阅读" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bDQ-UO-89t">
+                                <rect key="frame" x="252" y="91" width="96" height="29"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="24"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstItem="bDQ-UO-89t" firstAttribute="top" secondItem="CC0-1t-hzJ" secondAttribute="bottom" constant="8" id="2Es-Jk-OZK"/>
                             <constraint firstItem="NU7-wo-EVZ" firstAttribute="top" secondItem="aQ8-Ik-4Kd" secondAttribute="bottom" constant="16" id="3F8-Bs-72c"/>
                             <constraint firstItem="k8R-GT-PEE" firstAttribute="trailing" secondItem="NU7-wo-EVZ" secondAttribute="trailing" id="3Fe-tS-a92"/>
                             <constraint firstItem="k8R-GT-PEE" firstAttribute="top" secondItem="NU7-wo-EVZ" secondAttribute="bottom" constant="14" id="4i6-UC-pqZ"/>
                             <constraint firstAttribute="trailingMargin" secondItem="34R-qe-geB" secondAttribute="trailing" constant="20" id="5au-Gg-uq9"/>
+                            <constraint firstItem="bDQ-UO-89t" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="27" id="69O-zU-Sou"/>
                             <constraint firstItem="34R-qe-geB" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="20" id="9Gx-Rp-2zP"/>
-                            <constraint firstItem="CC0-1t-hzJ" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="bottom" multiplier="1/6" id="LSq-rB-7Im"/>
                             <constraint firstAttribute="trailingMargin" secondItem="aQ8-Ik-4Kd" secondAttribute="trailing" constant="20" id="URD-Ze-bUE"/>
                             <constraint firstItem="34R-qe-geB" firstAttribute="top" secondItem="k8R-GT-PEE" secondAttribute="bottom" constant="12" id="WRM-9Y-tJ8"/>
                             <constraint firstItem="NU7-wo-EVZ" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="20" id="aMw-5i-gfl"/>
                             <constraint firstAttribute="trailingMargin" secondItem="NU7-wo-EVZ" secondAttribute="trailing" constant="20" id="bJN-BI-o4c"/>
                             <constraint firstItem="bDQ-UO-89t" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="q0a-Ne-3qV"/>
                             <constraint firstItem="aQ8-Ik-4Kd" firstAttribute="top" secondItem="bDQ-UO-89t" secondAttribute="bottom" constant="24" id="rDr-oH-boV"/>
-                            <constraint firstItem="CC0-1t-hzJ" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="tcX-sv-vDx"/>
                             <constraint firstItem="aQ8-Ik-4Kd" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="20" id="yVP-m1-QGE"/>
                         </constraints>
                     </view>
