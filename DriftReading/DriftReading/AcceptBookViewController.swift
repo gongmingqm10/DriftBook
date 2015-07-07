@@ -8,7 +8,7 @@
 
 import UIKit
 
-class AcceptBookViewController: UIViewController {
+class AcceptBookViewController: UITableViewController {
     override func viewDidLoad() {
         
     }
