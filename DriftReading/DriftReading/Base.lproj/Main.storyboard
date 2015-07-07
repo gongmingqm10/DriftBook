@@ -58,7 +58,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="8kF-dm-En1" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1929" y="-341"/>
+            <point key="canvasLocation" x="1933" y="-331"/>
         </scene>
         <!--登录账号-->
         <scene sceneID="tne-QT-ifu">
@@ -159,7 +159,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="yac-H2-n3G" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="807" y="1995"/>
+            <point key="canvasLocation" x="807" y="2072"/>
         </scene>
         <!--漂信-->
         <scene sceneID="QLa-Mg-uUB">
@@ -180,7 +180,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="IjV-9Y-rO1" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1544" y="1995"/>
+            <point key="canvasLocation" x="1544" y="2072"/>
         </scene>
         <!--我的-->
         <scene sceneID="jLM-tl-xdq">
@@ -201,28 +201,46 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="i63-N8-EPA" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2284" y="1995"/>
+            <point key="canvasLocation" x="2284" y="2072"/>
         </scene>
-        <!--发现-->
-        <scene sceneID="BWT-Q3-fLQ">
+        <!--Discovery View Controller-->
+        <scene sceneID="5Ku-FC-teB">
             <objects>
-                <viewController id="m3Z-DF-e2z" customClass="DiscoveryViewController" customModule="DriftReading" customModuleProvider="target" sceneMemberID="viewController">
-                    <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="C5x-Sk-DGy"/>
-                        <viewControllerLayoutGuide type="bottom" id="gRo-aH-w9G"/>
-                    </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="o0G-Ux-ohy">
+                <tableViewController id="fEr-is-M7T" customClass="DiscoveryViewController" customModule="DriftReading" customModuleProvider="target" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" id="qfL-Ea-Lja">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                    </view>
-                    <navigationItem key="navigationItem" title="发现" id="iM5-Fr-Kx0">
-                        <barButtonItem key="backBarButtonItem" title="发现" id="7fH-eT-4GU"/>
+                        <prototypes>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="x8e-FR-ojj">
+                                <rect key="frame" x="0.0" y="86" width="600" height="44"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="x8e-FR-ojj" id="o9v-w3-vGY">
+                                    <rect key="frame" x="0.0" y="0.0" width="600" height="44"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                </tableViewCellContentView>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="fEr-is-M7T" id="w04-DP-CCf"/>
+                            <outlet property="delegate" destination="fEr-is-M7T" id="jjm-OF-kEf"/>
+                        </connections>
+                    </tableView>
+                    <navigationItem key="navigationItem" id="Z6S-6y-52K">
+                        <nil key="title"/>
+                        <segmentedControl key="titleView" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="bar" selectedSegmentIndex="0" id="vbW-Cp-Box">
+                            <rect key="frame" x="220" y="7" width="160" height="30"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <segments>
+                                <segment title="漂流区"/>
+                                <segment title="在读区"/>
+                            </segments>
+                        </segmentedControl>
                     </navigationItem>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="HjO-JC-Cyk" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="RrL-tx-dq2" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-29" y="1995"/>
+            <point key="canvasLocation" x="25" y="2072"/>
         </scene>
         <!--Tab Bar Controller-->
         <scene sceneID="pVu-T1-hNW">
@@ -235,10 +253,10 @@
                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                     </tabBar>
                     <connections>
-                        <segue destination="jHW-fm-HQ4" kind="relationship" relationship="viewControllers" id="PKl-6b-cBO"/>
-                        <segue destination="Lv2-8E-ykc" kind="relationship" relationship="viewControllers" id="RJS-gf-ZuP"/>
-                        <segue destination="ULk-2c-VBr" kind="relationship" relationship="viewControllers" id="D2K-e1-0ZU"/>
-                        <segue destination="05K-oL-d60" kind="relationship" relationship="viewControllers" id="hjd-wo-hGE"/>
+                        <segue destination="RMr-2Y-Fdf" kind="relationship" relationship="viewControllers" id="LK9-H1-XBt"/>
+                        <segue destination="Lv2-8E-ykc" kind="relationship" relationship="viewControllers" id="AT7-cn-BXZ"/>
+                        <segue destination="ULk-2c-VBr" kind="relationship" relationship="viewControllers" id="0PC-f1-uFB"/>
+                        <segue destination="05K-oL-d60" kind="relationship" relationship="viewControllers" id="1Id-Ka-3sX"/>
                     </connections>
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ZPq-xo-BXS" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -262,25 +280,6 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="cWp-Ff-aLd" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="443" y="-331"/>
-        </scene>
-        <!--发现-->
-        <scene sceneID="Tt1-NL-M8T">
-            <objects>
-                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="jHW-fm-HQ4" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="发现" image="IconDiscovery" id="NXV-84-NYg"/>
-                    <toolbarItems/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="kWe-6B-AN1">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
-                        <autoresizingMask key="autoresizingMask"/>
-                    </navigationBar>
-                    <nil name="viewControllers"/>
-                    <connections>
-                        <segue destination="m3Z-DF-e2z" kind="relationship" relationship="rootViewController" id="UVR-pW-zzl"/>
-                    </connections>
-                </navigationController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="WJk-iP-zAD" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="-29" y="1247"/>
         </scene>
         <!--受漂-->
         <scene sceneID="A2o-ma-qfA">
@@ -338,6 +337,25 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="jHg-yT-let" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="2284" y="1238"/>
+        </scene>
+        <!--发现-->
+        <scene sceneID="N42-uK-Mlx">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="RMr-2Y-Fdf" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="发现" image="IconDiscovery" id="59a-qf-vm3"/>
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="cuU-9h-TI3">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="fEr-is-M7T" kind="relationship" relationship="rootViewController" id="V3u-iw-z94"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="QD8-Qs-sIM" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="25" y="1244"/>
         </scene>
     </scenes>
     <resources>
