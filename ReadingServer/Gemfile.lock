@@ -29,6 +29,9 @@ GEM
       thread_safe (~> 0.1)
       tzinfo (~> 1.1)
     arel (5.0.1.20140414130214)
+    bcrypt (3.1.10)
+    bson (3.1.2)
+    bson_ext (1.5.1)
     builder (3.2.2)
     coffee-rails (4.0.1)
       coffee-script (>= 2.2.0)
@@ -38,6 +41,7 @@ GEM
       execjs
     coffee-script-source (1.9.1.1)
     commonjs (0.2.7)
+    connection_pool (2.2.0)
     erubis (2.7.0)
     execjs (2.5.2)
     hike (1.2.3)
@@ -61,8 +65,19 @@ GEM
       mime-types (>= 1.16, < 3)
     mime-types (2.6.1)
     minitest (5.7.0)
+    mongoid (4.0.2)
+      activemodel (~> 4.0)
+      moped (~> 2.0.0)
+      origin (~> 2.1)
+      tzinfo (>= 0.3.37)
+    moped (2.0.6)
+      bson (~> 3.0)
+      connection_pool (~> 2.0)
+      optionable (~> 0.2.0)
     multi_json (1.11.0)
     oj (2.12.9)
+    optionable (0.2.0)
+    origin (2.1.1)
     progressbar (0.21.0)
     rabl (0.11.6)
       activesupport (>= 2.3.14)
@@ -101,7 +116,6 @@ GEM
       actionpack (>= 3.0)
       activesupport (>= 3.0)
       sprockets (>= 2.8, < 4.0)
-    sqlite3 (1.3.10)
     therubyracer (0.12.2)
       libv8 (~> 3.16.14.0)
       ref
@@ -122,18 +136,20 @@ PLATFORMS
 
 DEPENDENCIES
   aasm
+  bcrypt
+  bson_ext
   coffee-rails (~> 4.0.0)
   commonjs (~> 0.2.7)
   jbuilder (~> 2.0)
   jquery-rails
   less-rails
+  mongoid (~> 4.0.0)
   oj
   progressbar (~> 0.21.0)
   rabl
   rails (= 4.1.8)
   sdoc (~> 0.4.0)
   spring
-  sqlite3
   therubyracer
   turbolinks
   uglifier (>= 1.3.0)
