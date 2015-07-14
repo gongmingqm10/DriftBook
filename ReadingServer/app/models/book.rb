@@ -6,11 +6,13 @@ class Book
   field :author, type: String
   field :summary, type: String
   field :doubanid, type: Integer
+  field :status, type: String
 
   belongs_to :owner, class_name: 'User', inverse_of: :books
   belongs_to :holder, class_name: 'User', inverse_of: :books
   has_many :events, class_name: 'Event', inverse_of: :book
 
   validates_presence_of :name, :owner
+  validates_inclusion_of :status, in: %w(drifting, reading, stop)
 
 end
