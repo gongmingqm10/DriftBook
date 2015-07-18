@@ -16,8 +16,8 @@ class User
   has_many :hold_books, class_name: 'Book', inverse_of: :user
   has_many :events, class_name: 'Event', inverse_of: :user
 
-  validates_uniqueness_of :username, :email
-  validates_presence_of :username, :email, :password
+  validates_uniqueness_of :email
+  validates_presence_of :email, :password
 
   class << self
     def authenticate (username, password)
