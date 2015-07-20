@@ -1,0 +1,16 @@
+# Uncomment this line to define a global platform for your project
+platform :ios, '8.0'
+
+target 'DriftReading' do
+  pod 'AFNetworking', '~> 2.5'
+  pod 'SDWebImage+ExtensionSupport', '~> 3.7'
+end
+
+target 'DriftReadingTests' do
+
+end
+
+target 'DriftReadingUITests' do
+
+end
+
