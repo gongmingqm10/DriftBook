@@ -62,7 +62,11 @@ Rails.application.routes.draw do
     end
   end
 
+
+  resources :users
+  
   root "web_ui#index"
+
 
 
 end

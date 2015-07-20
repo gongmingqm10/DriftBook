@@ -12,6 +12,8 @@ gem 'commonjs', '~> 0.2.7'
 gem 'less-rails'
 gem 'underscore-rails'
 
+gem 'pry', '~> 0.10.1'
+
 # Use ActiveModel has_secure_password
 gem 'bcrypt', require: 'bcrypt'
 
@@ -53,4 +55,3 @@ gem "progressbar", "~> 0.21.0"
 
 # Use debugger
 # gem 'debugger', group: [:development, :test]
-

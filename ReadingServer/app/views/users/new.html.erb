@@ -1,0 +1,32 @@
+<%= form_for :user do |f| %>
+  <p>
+    <%= f.label :email %><br>
+    <%= f.text_field :email %>
+  </p>
+
+  <p>
+    <%= f.label :password %><br>
+    <%= f.text_field :password %>
+  </p>
+  <p>
+    <%= f.label :username %><br>
+    <%= f.text_field :username %>
+  </p>
+
+  <p>
+    <%= f.label :avatar %><br>
+    <%= f.text_field :avatar %>
+  </p>
+  <p>
+    <%= f.label :telephone %><br>
+    <%= f.text_field :telephone %>
+  </p>
+
+  <p>
+    <%= f.label :wechat %><br>
+    <%= f.text_field :wechat %>
+  </p>
+  <p>
+    <%= f.submit %>
+  </p>
+<% end %>
