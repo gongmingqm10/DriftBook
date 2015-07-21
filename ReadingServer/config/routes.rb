@@ -56,15 +56,18 @@ Rails.application.routes.draw do
   #   end
 
   namespace :api do
-    resources :users
+    resources :users do
+
+    end
     resources :books do
       resources :activities
     end
   end
 
+  post 'login', to: 'users#session'
 
   resources :users
-  
+
   root "web_ui#index"
 
 

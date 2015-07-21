@@ -20,8 +20,8 @@ class User
   validates_presence_of :email, :password
 
   class << self
-    def authenticate (username, password)
-      user = find_by(user_number: username.downcase)
+    def authenticate (email, password)
+      user = find_by(email: email.downcase)
       if user && user.password_hash == BCrypt::Engine.hash_secret(password, user.password_salt)
         user
       end
