@@ -11,6 +11,8 @@ class User
   field :email, type: String
   field :telephone, type: String
 
+  attr_accessor :password
+
   embeds_one :address, class_name: 'Address'
   has_many :own_books, class_name: 'Book', inverse_of: :user
   has_many :hold_books, class_name: 'Book', inverse_of: :user
@@ -18,6 +20,8 @@ class User
 
   validates_uniqueness_of :email
   validates_presence_of :email, :password
+
+  before_save :encrypt_password
 
   class << self
     def authenticate (email, password)
