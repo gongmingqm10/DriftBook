@@ -20,7 +20,7 @@ class DriftAPI: NSObject {
     }
     
     func loginWith(email: String, password: String, success: () -> Void, failure: (error: APIError) -> Void) {
-        apiSessionManager.POST("/login",
+        apiSessionManager.POST("/api/login",
             parameters: ["email": email, "password": password],
             success: { (session: NSURLSessionDataTask!, responseObject: AnyObject!) -> Void in
                 var responseJson: Dictionary = responseObject as! Dictionary<String, String>
