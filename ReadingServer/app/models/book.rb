@@ -16,4 +16,8 @@ class Book
   validates_presence_of :name, :owner
   validates_inclusion_of :status, in: %w(drifting reading stop)
 
+  def address
+    owner.address
+  end
+
 end

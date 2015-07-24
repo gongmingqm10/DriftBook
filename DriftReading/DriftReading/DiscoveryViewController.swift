@@ -10,7 +10,13 @@ import UIKit
 
 class DiscoveryViewController: UITableViewController {
 
+    let driftAPI = DriftAPI()
+    
     override func viewDidLoad() {
-        
+        driftAPI.getBooks("drifting", success: { (books) -> Void in
+            print(books)
+            }) { (error) -> Void in
+                print(error.description)
+        }
     }
 }

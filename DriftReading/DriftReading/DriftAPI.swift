@@ -26,7 +26,6 @@ class DriftAPI: NSObject {
                 let responseJson: Dictionary = responseObject as! Dictionary<String, String>
                 let data = NSKeyedArchiver.archivedDataWithRootObject(User(json: responseJson))
                 NSUserDefaults.standardUserDefaults().setObject(data, forKey: Constants.UserKey)
-                User.new()
                 success()
             },
             failure: { error in
@@ -34,4 +33,23 @@ class DriftAPI: NSObject {
             }
         )
     }
+    
+    func getBooks(filterType: String, success: (books: NSArray) -> Void, failure: (error: APIError) -> Void) {
+        apiSessionManager.GET("/api/books", parameters: ["filter": filterType],
+            success: { (session: NSURLSessionDataTask!, responseObject: AnyObject!) -> Void in
+                let responseJson = responseObject as! NSArray
+                let books = NSMutableArray()
+                for (index, element) in responseJson.enumerate() {
+                    let bookDictionary = element as! Dictionary<String, String>
+                    books.addObject(Book(json: bookDictionary))
+                }
+                success(books: books)
+                
+            },
+            failure: { error in
+                failure(error: error)
+            }
+        )
+    }
+    
 }
