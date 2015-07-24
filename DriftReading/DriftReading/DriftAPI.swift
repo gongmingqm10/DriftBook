@@ -23,7 +23,10 @@ class DriftAPI: NSObject {
         apiSessionManager.POST("/api/login",
             parameters: ["email": email, "password": password],
             success: { (session: NSURLSessionDataTask!, responseObject: AnyObject!) -> Void in
-                var responseJson: Dictionary = responseObject as! Dictionary<String, String>
+                let responseJson: Dictionary = responseObject as! Dictionary<String, String>
+                let data = NSKeyedArchiver.archivedDataWithRootObject(User(json: responseJson))
+                NSUserDefaults.standardUserDefaults().setObject(data, forKey: Constants.UserKey)
+                User.new()
                 success()
             },
             failure: { error in
