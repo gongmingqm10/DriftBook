@@ -39,8 +39,8 @@ class DriftAPI: NSObject {
             success: { (session: NSURLSessionDataTask!, responseObject: AnyObject!) -> Void in
                 let responseJson = responseObject as! NSArray
                 let books = NSMutableArray()
-                for (index, element) in responseJson.enumerate() {
-                    let bookDictionary = element as! Dictionary<String, String>
+                for bookJson in responseJson {
+                    let bookDictionary = bookJson as! Dictionary<String, String>
                     books.addObject(Book(json: bookDictionary))
                 }
                 success(books: books)
