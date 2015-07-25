@@ -17,14 +17,14 @@ class Book: NSObject {
     var imageUrl: String?
     var address: Address?
     
-    init(json: Dictionary<String, String>) {
-        self.id = json["id"]
-        self.name = json["name"]
-        self.author = json["author"]
-        self.summary = json["summary"]
-        self.status = json["summary"]
-        self.imageUrl = json["image"]
-        self.address = Address(json: json["address"] as! Dictionary<String, String>)
+    init(json: [String: AnyObject]) {
+        self.id = json["id"] as! String
+        self.name = json["name"] as! String
+        self.author = json["author"] as! String
+        self.summary = json["summary"] as! String
+        self.status = json["summary"] as! String
+        self.imageUrl = json["image"] as! String
+        self.address = Address(json: json["address"] as! [String: AnyObject])
     }
     
     

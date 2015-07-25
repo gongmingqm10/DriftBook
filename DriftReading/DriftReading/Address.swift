@@ -16,12 +16,12 @@ class Address: NSObject {
     var city: String!
     var street: String!
     
-    init(json: Dictionary<String, String>) {
-        self.latitude = NSString(string: json["latitude"]!).doubleValue
-        self.longitude = NSString(string: json["longitude"]!).doubleValue
-        self.province = json["province"] as String!
-        self.city = json["city"] as String!
-        self.street = json["street"] as String!
+    init(json: [String: AnyObject]) {
+        self.latitude = json["latitude"] as! Double
+        self.longitude = json["longitude"] as! Double
+        self.province = json["province"] as! String
+        self.city = json["city"] as! String
+        self.street = json["street"] as! String
     }
     
 }
