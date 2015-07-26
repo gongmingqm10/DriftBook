@@ -24,4 +24,8 @@ class Address: NSObject {
         self.street = json["street"] as! String
     }
     
+    func info() -> String {
+        return city + street
+    }
+    
 }

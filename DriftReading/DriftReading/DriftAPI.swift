@@ -34,14 +34,14 @@ class DriftAPI: NSObject {
         )
     }
     
-    func getBooks(filterType: String, success: (books: NSArray) -> Void, failure: (error: APIError) -> Void) {
+    func getBooks(filterType: String, success: (books: [Book]) -> Void, failure: (error: APIError) -> Void) {
         apiSessionManager.GET("/api/books", parameters: ["filter": filterType],
             success: { (session: NSURLSessionDataTask!, responseObject: AnyObject!) -> Void in
                 let responseJson = responseObject as! NSArray
-                let books = NSMutableArray()
+                var books: [Book] = []
                 for (_, element) in responseJson.enumerate() {
                     let bookDictionary = element as! [String: AnyObject]
-                    books.addObject(Book(json: bookDictionary))
+                    books.append(Book(json: bookDictionary))
                 }
                 success(books: books)
                 

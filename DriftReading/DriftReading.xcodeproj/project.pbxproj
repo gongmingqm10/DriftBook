@@ -28,6 +28,7 @@
 		35AF51511B61F24300BFA917 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35AF51501B61F24300BFA917 /* Constants.swift */; };
 		35AF51531B6236FC00BFA917 /* Book.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35AF51521B6236FC00BFA917 /* Book.swift */; };
 		35AF51551B62371000BFA917 /* Address.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35AF51541B62371000BFA917 /* Address.swift */; };
+		35B851D21B652AA600EBC7E9 /* BookTableCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35B851D11B652AA600EBC7E9 /* BookTableCell.swift */; };
 		74CEF5F1CB8A8ADC6D4A51C9 /* libPods-DriftReading.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 36D29DC6F72743D40434B755 /* libPods-DriftReading.a */; };
 /* End PBXBuildFile section */
 
@@ -76,6 +77,7 @@
 		35AF51501B61F24300BFA917 /* Constants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		35AF51521B6236FC00BFA917 /* Book.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Book.swift; sourceTree = "<group>"; };
 		35AF51541B62371000BFA917 /* Address.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Address.swift; sourceTree = "<group>"; };
+		35B851D11B652AA600EBC7E9 /* BookTableCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BookTableCell.swift; sourceTree = "<group>"; };
 		35DBF34D1B5D0E8F003A5486 /* DriftReading-Bridge-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "DriftReading-Bridge-Header.h"; sourceTree = "<group>"; };
 		36D29DC6F72743D40434B755 /* libPods-DriftReading.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-DriftReading.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		6072BF2C2F564DEA58A4C94B /* Pods-DriftReading.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DriftReading.release.xcconfig"; path = "Pods/Target Support Files/Pods-DriftReading/Pods-DriftReading.release.xcconfig"; sourceTree = "<group>"; };
@@ -153,6 +155,7 @@
 		3509ECB61B4A89BB00BAECF2 /* DriftReading */ = {
 			isa = PBXGroup;
 			children = (
+				35B851D01B652A9800EBC7E9 /* views */,
 				35AF514D1B61EE2E00BFA917 /* data */,
 				35085CD41B5D359900DE8B9C /* api */,
 				3509ECE51B4AB44600BAECF2 /* controllers */,
@@ -206,6 +209,14 @@
 				35AF51501B61F24300BFA917 /* Constants.swift */,
 			);
 			name = data;
+			sourceTree = "<group>";
+		};
+		35B851D01B652A9800EBC7E9 /* views */ = {
+			isa = PBXGroup;
+			children = (
+				35B851D11B652AA600EBC7E9 /* BookTableCell.swift */,
+			);
+			name = views;
 			sourceTree = "<group>";
 		};
 		5D9BB26E563840D471803C40 /* Frameworks */ = {
@@ -396,6 +407,7 @@
 				35085CD61B5D35F500DE8B9C /* APISessionManager.swift in Sources */,
 				3509ECBA1B4A89BB00BAECF2 /* ViewController.swift in Sources */,
 				35085CD31B5D18E600DE8B9C /* APISetting.swift in Sources */,
+				35B851D21B652AA600EBC7E9 /* BookTableCell.swift in Sources */,
 				35085CDC1B5D3C1900DE8B9C /* DriftAPI.swift in Sources */,
 				3509ECB81B4A89BB00BAECF2 /* AppDelegate.swift in Sources */,
 				3531D4C71B4AF526006DE554 /* MineViewController.swift in Sources */,

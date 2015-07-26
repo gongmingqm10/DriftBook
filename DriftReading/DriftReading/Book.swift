@@ -20,10 +20,10 @@ class Book: NSObject {
     init(json: [String: AnyObject]) {
         self.id = json["id"] as! String
         self.name = json["name"] as! String
-        self.author = json["author"] as! String
+        self.author = json["author"] as? String
         self.summary = json["summary"] as! String
         self.status = json["summary"] as! String
-        self.imageUrl = json["image"] as! String
+        self.imageUrl = json["image"] as? String
         self.address = Address(json: json["address"] as! [String: AnyObject])
     }
     

@@ -7,7 +7,6 @@
 //
 
 import Foundation
-import AFNetworking
 
 class APISessionManager: NSObject {
     var sessionManager: AFHTTPSessionManager
