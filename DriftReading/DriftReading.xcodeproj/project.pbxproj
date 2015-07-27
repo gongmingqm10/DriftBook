@@ -26,6 +26,8 @@
 		3531D4C31B4AF4D0006DE554 /* AcceptBookViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3531D4C21B4AF4D0006DE554 /* AcceptBookViewController.swift */; };
 		3531D4C51B4AF4FA006DE554 /* MessageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3531D4C41B4AF4FA006DE554 /* MessageViewController.swift */; };
 		3531D4C71B4AF526006DE554 /* MineViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3531D4C61B4AF526006DE554 /* MineViewController.swift */; };
+		35457B3C1B666F33005BE7CB /* MyDropBookViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35457B3B1B666F33005BE7CB /* MyDropBookViewController.swift */; };
+		35457B3E1B667B0F005BE7CB /* MyBookCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35457B3D1B667B0F005BE7CB /* MyBookCell.swift */; };
 		35AF514C1B61E86A00BFA917 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35AF514B1B61E86A00BFA917 /* User.swift */; };
 		35AF51511B61F24300BFA917 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35AF51501B61F24300BFA917 /* Constants.swift */; };
 		35AF51531B6236FC00BFA917 /* Book.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35AF51521B6236FC00BFA917 /* Book.swift */; };
@@ -81,6 +83,8 @@
 		3531D4C21B4AF4D0006DE554 /* AcceptBookViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AcceptBookViewController.swift; sourceTree = "<group>"; };
 		3531D4C41B4AF4FA006DE554 /* MessageViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MessageViewController.swift; sourceTree = "<group>"; };
 		3531D4C61B4AF526006DE554 /* MineViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MineViewController.swift; sourceTree = "<group>"; };
+		35457B3B1B666F33005BE7CB /* MyDropBookViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MyDropBookViewController.swift; sourceTree = "<group>"; };
+		35457B3D1B667B0F005BE7CB /* MyBookCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MyBookCell.swift; sourceTree = "<group>"; };
 		35AF514B1B61E86A00BFA917 /* User.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 		35AF51501B61F24300BFA917 /* Constants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		35AF51521B6236FC00BFA917 /* Book.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Book.swift; sourceTree = "<group>"; };
@@ -213,6 +217,7 @@
 				3531D4C41B4AF4FA006DE554 /* MessageViewController.swift */,
 				3531D4C61B4AF526006DE554 /* MineViewController.swift */,
 				35FB0F991B65DC6900DC1F35 /* CreateBookViewController.swift */,
+				35457B3B1B666F33005BE7CB /* MyDropBookViewController.swift */,
 			);
 			name = controllers;
 			sourceTree = "<group>";
@@ -233,6 +238,7 @@
 				35B851D11B652AA600EBC7E9 /* BookTableCell.swift */,
 				35FB0F951B65BA1D00DC1F35 /* AcceptBookCell.swift */,
 				350E569A1B663177006D07E9 /* DoubanTableCell.swift */,
+				35457B3D1B667B0F005BE7CB /* MyBookCell.swift */,
 			);
 			name = views;
 			sourceTree = "<group>";
@@ -422,6 +428,7 @@
 			files = (
 				35AF514C1B61E86A00BFA917 /* User.swift in Sources */,
 				3509ECE71B4AB45D00BAECF2 /* LoginViewController.swift in Sources */,
+				35457B3E1B667B0F005BE7CB /* MyBookCell.swift in Sources */,
 				35085CD61B5D35F500DE8B9C /* APISessionManager.swift in Sources */,
 				3509ECBA1B4A89BB00BAECF2 /* ViewController.swift in Sources */,
 				350E569B1B663177006D07E9 /* DoubanTableCell.swift in Sources */,
@@ -442,6 +449,7 @@
 				35AF51551B62371000BFA917 /* Address.swift in Sources */,
 				35085CD81B5D373C00DE8B9C /* APIError.swift in Sources */,
 				35FB0F9A1B65DC6900DC1F35 /* CreateBookViewController.swift in Sources */,
+				35457B3C1B666F33005BE7CB /* MyDropBookViewController.swift in Sources */,
 				350E56991B662949006D07E9 /* DoubanBook.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

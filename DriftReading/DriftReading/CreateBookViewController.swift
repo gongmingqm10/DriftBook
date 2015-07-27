@@ -14,7 +14,7 @@ class CreateBookViewController: UIViewController, UITableViewDataSource, UITable
     @IBOutlet weak var bookTableView: UITableView!
     
     let doubanAPI = DoubanAPI()
-    var searchActive = false
+    let driftAPI = DriftAPI()
     var books: [DoubanBook] = []
     
     override func viewDidLoad() {
@@ -22,23 +22,7 @@ class CreateBookViewController: UIViewController, UITableViewDataSource, UITable
         bookTableView.dataSource = self
         bookSearchBar.delegate = self
     }
-    
-    func searchBarTextDidBeginEditing(searchBar: UISearchBar) {
-        searchActive = true;
-    }
-    
-    func searchBarTextDidEndEditing(searchBar: UISearchBar) {
-        searchActive = false;
-    }
-    
-    func searchBarCancelButtonClicked(searchBar: UISearchBar) {
-        searchActive = false;
-    }
-    
-    func searchBarSearchButtonClicked(searchBar: UISearchBar) {
-        searchActive = false;
-    }
-    
+
     func searchBar(searchBar: UISearchBar, textDidChange searchText: String) {
         doubanAPI.searchBooks(searchText, success: { (books) -> Void in
             self.books = books
@@ -65,5 +49,27 @@ class CreateBookViewController: UIViewController, UITableViewDataSource, UITable
         let book = books[indexPath.row]
         cell.populate(book)
         return cell
+    }
+    
+    func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
+        let book = books[indexPath.row]
+        
+        let alertController = UIAlertController(title: "提示", message: "确定将《\(book.name)》放漂吗？", preferredStyle: UIAlertControllerStyle.Alert)
+        alertController.addAction(UIAlertAction(title: "确定", style: UIAlertActionStyle.Default, handler: {(alert: UIAlertAction!) in
+            let user = DataUtils.sharedInstance.currentUser()
+            self.driftAPI.createDoubanBook(user.userId, book: book, success: { () -> Void in
+                self.navigationController?.popViewControllerAnimated(true)
+                }, failure: { (error) -> Void in
+                    self.showErrorAlert()
+            })
+        }))
+        alertController.addAction(UIAlertAction(title: "取消", style: UIAlertActionStyle.Cancel, handler: nil))
+        self.presentViewController(alertController, animated: true, completion: nil)
+    }
+    
+    private func showErrorAlert() {
+        let alertController = UIAlertController(title: "提示", message: "图书添加失败，请稍后重试", preferredStyle: UIAlertControllerStyle.Alert)
+        alertController.addAction(UIAlertAction(title: "确定", style: UIAlertActionStyle.Default, handler: nil))
+        self.presentViewController(alertController, animated: true, completion: nil)
     }
 }

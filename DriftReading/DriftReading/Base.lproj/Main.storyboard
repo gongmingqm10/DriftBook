@@ -211,6 +211,7 @@
                                     </label>
                                 </subviews>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <gestureRecognizers/>
                                 <constraints>
                                     <constraint firstItem="Qjq-S5-VeP" firstAttribute="centerY" secondItem="0Js-EO-8NP" secondAttribute="centerY" id="AxL-Ux-0xW"/>
                                     <constraint firstItem="ttf-g4-Qat" firstAttribute="top" secondItem="0Js-EO-8NP" secondAttribute="top" constant="6" id="CIn-rM-fAZ"/>
@@ -224,6 +225,9 @@
                                         <exclude reference="CIn-rM-fAZ"/>
                                     </mask>
                                 </variation>
+                                <connections>
+                                    <outletCollection property="gestureRecognizers" destination="ThI-dI-o40" appends="YES" id="qAK-XZ-YxK"/>
+                                </connections>
                             </view>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="8Ji-bE-5za">
                                 <rect key="frame" x="0.0" y="219" width="600" height="48"/>
@@ -369,8 +373,110 @@
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="i63-N8-EPA" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <tapGestureRecognizer id="ThI-dI-o40" userLabel="Tap 我的放漂">
+                    <connections>
+                        <segue destination="xbd-gf-EvX" kind="show" id="QQ3-FK-6eW"/>
+                    </connections>
+                </tapGestureRecognizer>
             </objects>
             <point key="canvasLocation" x="2197" y="2005"/>
+        </scene>
+        <!--我放出的漂-->
+        <scene sceneID="KCW-th-P7f">
+            <objects>
+                <tableViewController title="我放出的漂" id="xbd-gf-EvX" customClass="MyDropBookViewController" customModule="DriftReading" customModuleProvider="target" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="159" sectionHeaderHeight="22" sectionFooterHeight="22" id="Oed-wZ-5NK">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <prototypes>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="MyBookCell" rowHeight="159" id="Eof-Wz-77Q" customClass="MyBookCell" customModule="DriftReading" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="22" width="600" height="159"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="Eof-Wz-77Q" id="FuR-qd-NCT">
+                                    <rect key="frame" x="0.0" y="0.0" width="600" height="158.5"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="BookSample1" translatesAutoresizingMaskIntoConstraints="NO" id="7Bf-Az-cUN">
+                                            <rect key="frame" x="16" y="12" width="85" height="129"/>
+                                            <constraints>
+                                                <constraint firstAttribute="width" constant="85" id="DPt-jo-sqf"/>
+                                                <constraint firstAttribute="width" secondItem="7Bf-Az-cUN" secondAttribute="height" multiplier="85:128" id="NA7-p2-a7b"/>
+                                            </constraints>
+                                        </imageView>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="解忧杂货店" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vpf-5C-jYe">
+                                            <rect key="frame" x="109" y="12" width="75" height="18"/>
+                                            <fontDescription key="fontDescription" type="system" weight="medium" pointSize="15"/>
+                                            <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="東野圭吾" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ESS-cF-CCo">
+                                            <rect key="frame" x="109" y="34" width="48" height="14.5"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                            <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="现代人内心流失的东西，这家杂货店能帮你找回—— 僻静的街道旁有一家杂货店，只要写下烦恼投进卷帘门的投信口，第二天就会在店后的牛奶箱里得到回答。因男友身患绝症，年轻女孩静子在爱情与梦想间徘徊" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="uNv-mq-UZ2">
+                                            <rect key="frame" x="109" y="56" width="483" height="29"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                            <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="地点：光谷广场 - 武汉市" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="d5a-UP-o08">
+                                            <rect key="frame" x="109" y="94" width="132.5" height="14.5"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                            <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rOV-GX-tn3">
+                                            <rect key="frame" x="109" y="117" width="30" height="28"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                                            <state key="normal" title="收漂">
+                                                <color key="titleColor" red="0.0" green="0.0" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                            </state>
+                                            <connections>
+                                                <action selector="receiveBook:" destination="Eof-Wz-77Q" eventType="touchUpInside" id="QZK-iP-vOr"/>
+                                            </connections>
+                                        </button>
+                                    </subviews>
+                                    <constraints>
+                                        <constraint firstItem="vpf-5C-jYe" firstAttribute="top" secondItem="7Bf-Az-cUN" secondAttribute="top" id="26B-IR-rD3"/>
+                                        <constraint firstItem="ESS-cF-CCo" firstAttribute="leading" secondItem="vpf-5C-jYe" secondAttribute="leading" id="2mu-Hi-RLI"/>
+                                        <constraint firstItem="uNv-mq-UZ2" firstAttribute="top" secondItem="ESS-cF-CCo" secondAttribute="bottom" constant="8" id="4HL-OU-n4H"/>
+                                        <constraint firstItem="d5a-UP-o08" firstAttribute="top" secondItem="uNv-mq-UZ2" secondAttribute="bottom" constant="9" id="9nD-AF-T1F"/>
+                                        <constraint firstItem="d5a-UP-o08" firstAttribute="leading" secondItem="uNv-mq-UZ2" secondAttribute="leading" id="Cdh-db-QHU"/>
+                                        <constraint firstItem="rOV-GX-tn3" firstAttribute="leading" secondItem="d5a-UP-o08" secondAttribute="leading" id="E4g-3T-jxB"/>
+                                        <constraint firstItem="7Bf-Az-cUN" firstAttribute="leading" secondItem="FuR-qd-NCT" secondAttribute="leadingMargin" constant="8" id="IJ8-Qi-TKG"/>
+                                        <constraint firstAttribute="trailingMargin" secondItem="uNv-mq-UZ2" secondAttribute="trailing" id="Vnv-TD-nMO"/>
+                                        <constraint firstItem="ESS-cF-CCo" firstAttribute="top" secondItem="vpf-5C-jYe" secondAttribute="bottom" constant="4" id="WCk-cp-NdY"/>
+                                        <constraint firstItem="7Bf-Az-cUN" firstAttribute="top" secondItem="FuR-qd-NCT" secondAttribute="topMargin" constant="4" id="e79-y9-Hex"/>
+                                        <constraint firstItem="rOV-GX-tn3" firstAttribute="top" secondItem="d5a-UP-o08" secondAttribute="bottom" constant="8" id="oBY-aM-poQ"/>
+                                        <constraint firstItem="uNv-mq-UZ2" firstAttribute="leading" secondItem="ESS-cF-CCo" secondAttribute="leading" id="qjm-c5-NFK"/>
+                                        <constraint firstItem="vpf-5C-jYe" firstAttribute="leading" secondItem="7Bf-Az-cUN" secondAttribute="trailing" constant="8" id="ult-mF-qWQ"/>
+                                    </constraints>
+                                </tableViewCellContentView>
+                                <connections>
+                                    <outlet property="bookAuthor" destination="ESS-cF-CCo" id="svy-Fx-HKs"/>
+                                    <outlet property="bookImage" destination="7Bf-Az-cUN" id="wpK-as-ivH"/>
+                                    <outlet property="bookLocation" destination="d5a-UP-o08" id="4Kb-Hu-nhC"/>
+                                    <outlet property="bookName" destination="vpf-5C-jYe" id="5gi-nO-GLQ"/>
+                                    <outlet property="bookSummary" destination="uNv-mq-UZ2" id="G5q-Rn-2R0"/>
+                                </connections>
+                            </tableViewCell>
+                        </prototypes>
+                        <sections/>
+                        <connections>
+                            <outlet property="dataSource" destination="xbd-gf-EvX" id="FjH-zK-fax"/>
+                            <outlet property="delegate" destination="xbd-gf-EvX" id="5mM-gL-p7h"/>
+                        </connections>
+                    </tableView>
+                    <connections>
+                        <outlet property="dropTableView" destination="Oed-wZ-5NK" id="oFO-m4-RO9"/>
+                    </connections>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="07M-XK-BBy" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2911" y="2005"/>
         </scene>
         <!--Discovery View Controller-->
         <scene sceneID="5Ku-FC-teB">

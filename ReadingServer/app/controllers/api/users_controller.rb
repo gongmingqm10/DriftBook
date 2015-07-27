@@ -5,7 +5,7 @@ class Api::UsersController < ApiController
     if @user
       render status: :ok
     else
-      render status: :not_found, json: {statusCode: 404, message: "Invalid username or password"}
+      render status: :not_found, json: {statusCode: 404, message: 'Invalid username or password'}
     end
   end
 end
