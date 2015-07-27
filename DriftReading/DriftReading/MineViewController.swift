@@ -15,8 +15,7 @@ class MineViewController: UIViewController {
     
     
     override func viewDidLoad() {
-        let data = NSUserDefaults.standardUserDefaults().valueForKey(Constants.UserKey) as! NSData
-        let user = NSKeyedUnarchiver.unarchiveObjectWithData(data) as! User
+        let user = DataUtils.sharedInstance.currentUser()
         
         self.usernameLabel.text = user.username
         self.emailLabel.text = user.email

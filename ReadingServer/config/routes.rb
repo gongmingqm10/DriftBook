@@ -57,7 +57,11 @@ Rails.application.routes.draw do
 
   namespace :api do
     post 'login', to: 'users#login'
-    resources :users
+    resources :users do
+      get 'owe_books', to: 'books#owe_book'
+      get 'hold_books', to: 'books#hold_book'
+      post 'create_book', to: 'books#drop_book'
+    end
     resources :books do
       resources :activities
     end

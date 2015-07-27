@@ -20,6 +20,8 @@
 		3509ECD81B4A89BC00BAECF2 /* DriftReadingUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3509ECD71B4A89BC00BAECF2 /* DriftReadingUITests.swift */; };
 		3509ECE71B4AB45D00BAECF2 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3509ECE61B4AB45D00BAECF2 /* LoginViewController.swift */; };
 		3509ECE91B4AB4B400BAECF2 /* RegisterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3509ECE81B4AB4B400BAECF2 /* RegisterViewController.swift */; };
+		350E56991B662949006D07E9 /* DoubanBook.swift in Sources */ = {isa = PBXBuildFile; fileRef = 350E56981B662949006D07E9 /* DoubanBook.swift */; };
+		350E569B1B663177006D07E9 /* DoubanTableCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 350E569A1B663177006D07E9 /* DoubanTableCell.swift */; };
 		3531D4C11B4AF46F006DE554 /* DiscoveryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3531D4C01B4AF46F006DE554 /* DiscoveryViewController.swift */; };
 		3531D4C31B4AF4D0006DE554 /* AcceptBookViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3531D4C21B4AF4D0006DE554 /* AcceptBookViewController.swift */; };
 		3531D4C51B4AF4FA006DE554 /* MessageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3531D4C41B4AF4FA006DE554 /* MessageViewController.swift */; };
@@ -29,6 +31,10 @@
 		35AF51531B6236FC00BFA917 /* Book.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35AF51521B6236FC00BFA917 /* Book.swift */; };
 		35AF51551B62371000BFA917 /* Address.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35AF51541B62371000BFA917 /* Address.swift */; };
 		35B851D21B652AA600EBC7E9 /* BookTableCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35B851D11B652AA600EBC7E9 /* BookTableCell.swift */; };
+		35FB0F961B65BA1D00DC1F35 /* AcceptBookCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35FB0F951B65BA1D00DC1F35 /* AcceptBookCell.swift */; };
+		35FB0F981B65CD7100DC1F35 /* DataUtils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35FB0F971B65CD7100DC1F35 /* DataUtils.swift */; };
+		35FB0F9A1B65DC6900DC1F35 /* CreateBookViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35FB0F991B65DC6900DC1F35 /* CreateBookViewController.swift */; };
+		35FB0F9C1B65ECEF00DC1F35 /* DoubanAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35FB0F9B1B65ECEF00DC1F35 /* DoubanAPI.swift */; };
 		74CEF5F1CB8A8ADC6D4A51C9 /* libPods-DriftReading.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 36D29DC6F72743D40434B755 /* libPods-DriftReading.a */; };
 /* End PBXBuildFile section */
 
@@ -69,6 +75,8 @@
 		3509ECD91B4A89BC00BAECF2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		3509ECE61B4AB45D00BAECF2 /* LoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		3509ECE81B4AB4B400BAECF2 /* RegisterViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RegisterViewController.swift; sourceTree = "<group>"; };
+		350E56981B662949006D07E9 /* DoubanBook.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DoubanBook.swift; sourceTree = "<group>"; };
+		350E569A1B663177006D07E9 /* DoubanTableCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DoubanTableCell.swift; sourceTree = "<group>"; };
 		3531D4C01B4AF46F006DE554 /* DiscoveryViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DiscoveryViewController.swift; sourceTree = "<group>"; };
 		3531D4C21B4AF4D0006DE554 /* AcceptBookViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AcceptBookViewController.swift; sourceTree = "<group>"; };
 		3531D4C41B4AF4FA006DE554 /* MessageViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MessageViewController.swift; sourceTree = "<group>"; };
@@ -79,6 +87,10 @@
 		35AF51541B62371000BFA917 /* Address.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Address.swift; sourceTree = "<group>"; };
 		35B851D11B652AA600EBC7E9 /* BookTableCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BookTableCell.swift; sourceTree = "<group>"; };
 		35DBF34D1B5D0E8F003A5486 /* DriftReading-Bridge-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "DriftReading-Bridge-Header.h"; sourceTree = "<group>"; };
+		35FB0F951B65BA1D00DC1F35 /* AcceptBookCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AcceptBookCell.swift; sourceTree = "<group>"; };
+		35FB0F971B65CD7100DC1F35 /* DataUtils.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DataUtils.swift; sourceTree = "<group>"; };
+		35FB0F991B65DC6900DC1F35 /* CreateBookViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CreateBookViewController.swift; sourceTree = "<group>"; };
+		35FB0F9B1B65ECEF00DC1F35 /* DoubanAPI.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DoubanAPI.swift; sourceTree = "<group>"; };
 		36D29DC6F72743D40434B755 /* libPods-DriftReading.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-DriftReading.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		6072BF2C2F564DEA58A4C94B /* Pods-DriftReading.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DriftReading.release.xcconfig"; path = "Pods/Target Support Files/Pods-DriftReading/Pods-DriftReading.release.xcconfig"; sourceTree = "<group>"; };
 		76BAF39664270B4D7900093C /* Pods-DriftReading.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DriftReading.debug.xcconfig"; path = "Pods/Target Support Files/Pods-DriftReading/Pods-DriftReading.debug.xcconfig"; sourceTree = "<group>"; };
@@ -116,6 +128,7 @@
 				35085CD51B5D35F500DE8B9C /* APISessionManager.swift */,
 				35085CD71B5D373C00DE8B9C /* APIError.swift */,
 				35085CDB1B5D3C1900DE8B9C /* DriftAPI.swift */,
+				35FB0F9B1B65ECEF00DC1F35 /* DoubanAPI.swift */,
 			);
 			name = api;
 			sourceTree = "<group>";
@@ -126,6 +139,7 @@
 				35AF514B1B61E86A00BFA917 /* User.swift */,
 				35AF51521B6236FC00BFA917 /* Book.swift */,
 				35AF51541B62371000BFA917 /* Address.swift */,
+				350E56981B662949006D07E9 /* DoubanBook.swift */,
 			);
 			name = model;
 			sourceTree = "<group>";
@@ -198,6 +212,7 @@
 				3531D4C21B4AF4D0006DE554 /* AcceptBookViewController.swift */,
 				3531D4C41B4AF4FA006DE554 /* MessageViewController.swift */,
 				3531D4C61B4AF526006DE554 /* MineViewController.swift */,
+				35FB0F991B65DC6900DC1F35 /* CreateBookViewController.swift */,
 			);
 			name = controllers;
 			sourceTree = "<group>";
@@ -207,6 +222,7 @@
 			children = (
 				35085CDD1B5DD3F200DE8B9C /* model */,
 				35AF51501B61F24300BFA917 /* Constants.swift */,
+				35FB0F971B65CD7100DC1F35 /* DataUtils.swift */,
 			);
 			name = data;
 			sourceTree = "<group>";
@@ -215,6 +231,8 @@
 			isa = PBXGroup;
 			children = (
 				35B851D11B652AA600EBC7E9 /* BookTableCell.swift */,
+				35FB0F951B65BA1D00DC1F35 /* AcceptBookCell.swift */,
+				350E569A1B663177006D07E9 /* DoubanTableCell.swift */,
 			);
 			name = views;
 			sourceTree = "<group>";
@@ -406,19 +424,25 @@
 				3509ECE71B4AB45D00BAECF2 /* LoginViewController.swift in Sources */,
 				35085CD61B5D35F500DE8B9C /* APISessionManager.swift in Sources */,
 				3509ECBA1B4A89BB00BAECF2 /* ViewController.swift in Sources */,
+				350E569B1B663177006D07E9 /* DoubanTableCell.swift in Sources */,
 				35085CD31B5D18E600DE8B9C /* APISetting.swift in Sources */,
 				35B851D21B652AA600EBC7E9 /* BookTableCell.swift in Sources */,
 				35085CDC1B5D3C1900DE8B9C /* DriftAPI.swift in Sources */,
 				3509ECB81B4A89BB00BAECF2 /* AppDelegate.swift in Sources */,
 				3531D4C71B4AF526006DE554 /* MineViewController.swift in Sources */,
 				35AF51531B6236FC00BFA917 /* Book.swift in Sources */,
+				35FB0F981B65CD7100DC1F35 /* DataUtils.swift in Sources */,
 				3531D4C31B4AF4D0006DE554 /* AcceptBookViewController.swift in Sources */,
 				3509ECE91B4AB4B400BAECF2 /* RegisterViewController.swift in Sources */,
+				35FB0F9C1B65ECEF00DC1F35 /* DoubanAPI.swift in Sources */,
+				35FB0F961B65BA1D00DC1F35 /* AcceptBookCell.swift in Sources */,
 				3531D4C11B4AF46F006DE554 /* DiscoveryViewController.swift in Sources */,
 				35AF51511B61F24300BFA917 /* Constants.swift in Sources */,
 				3531D4C51B4AF4FA006DE554 /* MessageViewController.swift in Sources */,
 				35AF51551B62371000BFA917 /* Address.swift in Sources */,
 				35085CD81B5D373C00DE8B9C /* APIError.swift in Sources */,
+				35FB0F9A1B65DC6900DC1F35 /* CreateBookViewController.swift in Sources */,
+				350E56991B662949006D07E9 /* DoubanBook.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

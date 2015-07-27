@@ -28,7 +28,7 @@ class User: NSObject, NSCoding {
     }
     
     func encodeWithCoder(aCoder: NSCoder) {
-        aCoder.encodeObject(self.username, forKey: "userId")
+        aCoder.encodeObject(self.userId, forKey: "userId")
         aCoder.encodeObject(self.email, forKey: "email")
         aCoder.encodeObject(self.username, forKey: "username")
         aCoder.encodeObject(self.avatar, forKey: "avatar")
