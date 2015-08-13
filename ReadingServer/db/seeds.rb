@@ -67,3 +67,11 @@ books = Book.create([
       image: "http://img4.douban.com/lpic/s1100387.jpg",
       doubanid: "1059406", status: "reading", owner: users[2], holder: users[3]}
 ])
+
+puts 'Create events ...'
+
+for book in books
+  for address in addresses
+    Event.create({content: '图书漂流到了' + address.street, category: 'drift', location: address, user: users[0], book: book})
+  end
+end

@@ -10,6 +10,15 @@ class Api::BooksController < ApiController
     end
   end
 
+  def show
+    @book = Book.find(params[:id])
+    if @book
+      render status: :ok
+    else
+      render status: :not_found, json: {message: 'Book not exists'}
+    end
+  end
+
   def owe_book
     user = User.find(params[:user_id])
     if user

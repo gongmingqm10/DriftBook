@@ -18,6 +18,8 @@ class DiscoveryViewController: UITableViewController {
     let TYPE_DRIFTING = "drifting"
     let TYPE_READING = "reading"
     
+    var selectedBook: Book?
+    
     override func viewDidLoad() {
         loadBooksByType(TYPE_DRIFTING)
     }
@@ -34,10 +36,23 @@ class DiscoveryViewController: UITableViewController {
     @IBAction func switchSegment(sender: UISegmentedControl) {
         loadBooksByType(sender.selectedSegmentIndex == 0 ? TYPE_DRIFTING : TYPE_READING)
     }
+    
+    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
+        if segue.identifier == "BookDetailSegue" {
+            let bookDetailController = segue.destinationViewController as! BookDetailViewController
+            bookDetailController.bookId = selectedBook!.id
+        }
+    }
     override func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return books.count
     }
     
+    
+    override func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
+        self.selectedBook = books[indexPath.row]
+        self.performSegueWithIdentifier("BookDetailSegue", sender: self)
+        
+    }
     override func tableView(tableView: UITableView, heightForRowAtIndexPath indexPath: NSIndexPath) -> CGFloat {
         return 150
     }

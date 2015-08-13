@@ -24,4 +24,10 @@ class MineViewController: UIViewController {
             self.userAvatar.sd_setImageWithURL(NSURL(string: avatarUrl), placeholderImage: UIImage(named: "IconAnonymous"))
         }
     }
+    
+    @IBAction func logout(sender: AnyObject) {
+        NSUserDefaults.standardUserDefaults().setObject(nil, forKey: Constants.UserKey)
+        exit(0)
+    }
+    
 }

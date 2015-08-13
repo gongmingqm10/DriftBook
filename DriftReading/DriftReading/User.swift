@@ -35,12 +35,12 @@ class User: NSObject, NSCoding {
         aCoder.encodeObject(self.telephone, forKey: "telephone")
     }
     
-    init(json: Dictionary<String, String>) {
-        self.userId = json["id"] as String!
-        self.email = json["email"] as String!
-        self.username = json["username"] as String!
-        self.avatar = json["avatar"] as String?
-        self.telephone = json["telephone"] as String?
+    init(json: [String: AnyObject]) {
+        self.userId = json["id"] as! String
+        self.email = json["email"] as! String
+        self.username = json["username"] as! String
+        self.avatar = json["avatar"] as? String
+        self.telephone = json["telephone"] as? String
     }
     
 }
