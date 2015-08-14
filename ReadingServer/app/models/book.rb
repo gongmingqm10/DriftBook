@@ -14,7 +14,7 @@ class Book
   has_many :events, class_name: 'Event', inverse_of: :book
 
   validates_presence_of :name, :owner
-  validates_inclusion_of :status, in: %w(drifting reading stop)
+  validates_inclusion_of :status, in: %w( drifting reading stop )
 
   def address
     owner.address

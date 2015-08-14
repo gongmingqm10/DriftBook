@@ -60,7 +60,8 @@ Rails.application.routes.draw do
     resources :users do
       get 'owe_books', to: 'books#owe_book'
       get 'hold_books', to: 'books#hold_book'
-      post 'upload_book', to: 'books#drop_book'
+      post 'books', to: 'books#drop_book'
+      put 'books/:id', to: 'books#update_status'
     end
     resources :books do
       resources :activities

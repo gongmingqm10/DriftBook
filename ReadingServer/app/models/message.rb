@@ -4,8 +4,8 @@ class Message
 
   field :content, type: String
 
-  has_one :sender, class_name: 'User', inverse_of: 'User'
-  has_one :receiver, class_name: 'User', inverse_of: 'User'
+  belongs_to :sender, class_name: 'User', inverse_of: 'messages_send'
+  belongs_to :receiver, class_name: 'User', inverse_of: 'messages_receive'
 
   validates_presence_of :content, :sender, :receiver
 end

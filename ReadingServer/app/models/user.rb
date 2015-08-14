@@ -17,6 +17,8 @@ class User
   has_many :own_books, class_name: 'Book', inverse_of: :user
   has_many :hold_books, class_name: 'Book', inverse_of: :user
   has_many :events, class_name: 'Event', inverse_of: :user
+  has_many :messages_send, class_name: 'Message', inverse_of: :sender
+  has_many :messages_receive, class_name: 'Message', inverse_of: :receiver
 
   validates_uniqueness_of :email
   validates_presence_of :email, :password
