@@ -14,8 +14,9 @@ class AcceptBookViewController: UITableViewController {
     
     let driftAPI = DriftAPI()
     var books: [Book] = []
-    
-    override func viewDidLoad() {
+    var selectedBook: Book?
+
+    override func viewDidAppear(animated: Bool) {
         let user = DataUtils.sharedInstance.currentUser()
         driftAPI.getHoldBooks(user.userId, success: { (books) -> Void in
             self.books = books
@@ -39,4 +40,19 @@ class AcceptBookViewController: UITableViewController {
         cell.populate(book)
         return cell
     }
+
+    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
+        if segue.identifier == "BookDetailSegue" {
+            let bookDetailController = segue.destinationViewController as! BookDetailViewController
+            bookDetailController.bookId = selectedBook!.id
+        }
+    }
+
+    override func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
+        self.selectedBook = books[indexPath.row]
+        self.performSegueWithIdentifier("BookDetailSegue", sender: self)
+
+    }
+
+
 }

@@ -164,7 +164,7 @@
                                         </constraints>
                                     </imageView>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="gongmingqm10@foxmail.com" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="p7M-xP-IeO">
-                                        <rect key="frame" x="70" y="42" width="166" height="14.5"/>
+                                        <rect key="frame" x="70" y="42" width="166" height="15"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="12"/>
                                         <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                         <nil key="highlightedColor"/>
@@ -408,7 +408,7 @@
                                 <rect key="frame" x="0.0" y="22" width="600" height="159"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="Eof-Wz-77Q" id="FuR-qd-NCT">
-                                    <rect key="frame" x="0.0" y="0.0" width="600" height="158.5"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="600" height="158"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
                                         <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="BookSample1" translatesAutoresizingMaskIntoConstraints="NO" id="7Bf-Az-cUN">
@@ -425,31 +425,31 @@
                                             <nil key="highlightedColor"/>
                                         </label>
                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="東野圭吾" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ESS-cF-CCo">
-                                            <rect key="frame" x="109" y="34" width="48" height="14.5"/>
+                                            <rect key="frame" x="109" y="34" width="48" height="15"/>
                                             <fontDescription key="fontDescription" type="system" pointSize="12"/>
                                             <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
                                             <nil key="highlightedColor"/>
                                         </label>
-                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="现代人内心流失的东西，这家杂货店能帮你找回—— 僻静的街道旁有一家杂货店，只要写下烦恼投进卷帘门的投信口，第二天就会在店后的牛奶箱里得到回答。因男友身患绝症，年轻女孩静子在爱情与梦想间徘徊" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="uNv-mq-UZ2">
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="现代人内心流失的东西，这家杂货店能帮你找回—— 僻静的街道旁有一家杂货店，只要写下烦恼投进卷帘门的投信口，第二天就会在店后的牛奶箱里得到回答。因男友身患绝症，年轻女孩静子在爱情与梦想间徘徊" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="uNv-mq-UZ2">
                                             <rect key="frame" x="109" y="56" width="483" height="29"/>
                                             <fontDescription key="fontDescription" type="system" pointSize="12"/>
                                             <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
                                             <nil key="highlightedColor"/>
                                         </label>
-                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="地点：光谷广场 - 武汉市" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="d5a-UP-o08">
-                                            <rect key="frame" x="109" y="94" width="132.5" height="14.5"/>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="地点：光谷广场 - 武汉市" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="d5a-UP-o08">
+                                            <rect key="frame" x="109" y="94" width="133" height="15"/>
                                             <fontDescription key="fontDescription" type="system" pointSize="12"/>
                                             <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                             <nil key="highlightedColor"/>
                                         </label>
-                                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rOV-GX-tn3">
+                                        <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rOV-GX-tn3">
                                             <rect key="frame" x="109" y="117" width="30" height="28"/>
                                             <fontDescription key="fontDescription" type="system" pointSize="13"/>
                                             <state key="normal" title="收漂">
                                                 <color key="titleColor" red="0.0" green="0.0" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                             </state>
                                             <connections>
-                                                <action selector="receiveBook:" destination="Eof-Wz-77Q" eventType="touchUpInside" id="QZK-iP-vOr"/>
+                                                <action selector="receiveBtnClick:" destination="Eof-Wz-77Q" eventType="touchUpInside" id="dOm-Wr-ns9"/>
                                             </connections>
                                         </button>
                                     </subviews>
@@ -475,6 +475,7 @@
                                     <outlet property="bookLocation" destination="d5a-UP-o08" id="4Kb-Hu-nhC"/>
                                     <outlet property="bookName" destination="vpf-5C-jYe" id="5gi-nO-GLQ"/>
                                     <outlet property="bookSummary" destination="uNv-mq-UZ2" id="G5q-Rn-2R0"/>
+                                    <outlet property="receiveBtn" destination="rOV-GX-tn3" id="JB9-0z-i2s"/>
                                 </connections>
                             </tableViewCell>
                         </prototypes>
@@ -505,7 +506,7 @@
                                 <rect key="frame" x="0.0" y="86" width="600" height="153"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="x8e-FR-ojj" id="o9v-w3-vGY">
-                                    <rect key="frame" x="0.0" y="0.0" width="600" height="152.5"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="600" height="152"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
                                         <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="BookSample1" translatesAutoresizingMaskIntoConstraints="NO" id="OlJ-2E-YkS">
@@ -527,19 +528,19 @@
                                             <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
                                             <nil key="highlightedColor"/>
                                         </label>
-                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="现代人内心流失的东西，这家杂货店能帮你找回—— 僻静的街道旁有一家杂货店，只要写下烦恼投进卷帘门的投信口，第二天就会在店后的牛奶箱里得到回答。因男友身患绝症，年轻女孩静子在爱情与梦想间徘徊" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gKg-sn-myA">
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="现代人内心流失的东西，这家杂货店能帮你找回—— 僻静的街道旁有一家杂货店，只要写下烦恼投进卷帘门的投信口，第二天就会在店后的牛奶箱里得到回答。因男友身患绝症，年轻女孩静子在爱情与梦想间徘徊" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gKg-sn-myA">
                                             <rect key="frame" x="109" y="56" width="483" height="29"/>
                                             <fontDescription key="fontDescription" type="system" pointSize="12"/>
                                             <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
                                             <nil key="highlightedColor"/>
                                         </label>
-                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="地点：光谷广场 - 武汉市" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="K8z-Ii-4GM">
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="地点：光谷广场 - 武汉市" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="K8z-Ii-4GM">
                                             <rect key="frame" x="109" y="94" width="133" height="15"/>
                                             <fontDescription key="fontDescription" type="system" pointSize="12"/>
                                             <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                             <nil key="highlightedColor"/>
                                         </label>
-                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="距离：0.8km" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vh5-fq-5E5">
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="距离：0.8km" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vh5-fq-5E5">
                                             <rect key="frame" x="109" y="117" width="71" height="15"/>
                                             <fontDescription key="fontDescription" type="system" pointSize="12"/>
                                             <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
@@ -575,7 +576,7 @@
                                 <rect key="frame" x="0.0" y="239" width="600" height="153"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="3AG-DI-jIQ" id="PEw-ch-XZs">
-                                    <rect key="frame" x="0.0" y="0.0" width="600" height="152.5"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="600" height="152"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
                                         <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="BookSample2" translatesAutoresizingMaskIntoConstraints="NO" id="zS0-hf-VFr">
@@ -597,13 +598,13 @@
                                             <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
                                             <nil key="highlightedColor"/>
                                         </label>
-                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="地点：华中科技大学 - 武汉市" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="sGU-XV-hjC">
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="地点：华中科技大学 - 武汉市" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="sGU-XV-hjC">
                                             <rect key="frame" x="109" y="94" width="157" height="15"/>
                                             <fontDescription key="fontDescription" type="system" pointSize="12"/>
                                             <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                             <nil key="highlightedColor"/>
                                         </label>
-                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="距离：2.2km" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="C2j-Re-t4Y">
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="距离：2.2km" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="C2j-Re-t4Y">
                                             <rect key="frame" x="109" y="117" width="71" height="15"/>
                                             <fontDescription key="fontDescription" type="system" pointSize="12"/>
                                             <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
@@ -637,7 +638,7 @@
                                 <rect key="frame" x="0.0" y="392" width="600" height="153"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="3u8-0w-iZy" id="eDa-sD-oRa">
-                                    <rect key="frame" x="0.0" y="0.0" width="600" height="152.5"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="600" height="152"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
                                         <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="BookSample3" translatesAutoresizingMaskIntoConstraints="NO" id="zjr-wG-HAw">
@@ -659,13 +660,13 @@
                                             <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
                                             <nil key="highlightedColor"/>
                                         </label>
-                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="地点：武汉理工大学 - 武汉市" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pNP-AF-6G3">
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="地点：武汉理工大学 - 武汉市" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pNP-AF-6G3">
                                             <rect key="frame" x="109" y="94" width="157" height="15"/>
                                             <fontDescription key="fontDescription" type="system" pointSize="12"/>
                                             <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                             <nil key="highlightedColor"/>
                                         </label>
-                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="距离：18km" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zRk-m6-aTM">
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="距离：18km" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zRk-m6-aTM">
                                             <rect key="frame" x="109" y="117" width="67" height="15"/>
                                             <fontDescription key="fontDescription" type="system" pointSize="12"/>
                                             <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
@@ -700,7 +701,7 @@
                                 <rect key="frame" x="0.0" y="545" width="600" height="153"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="wtH-HP-jpB" id="vow-g2-MEY">
-                                    <rect key="frame" x="0.0" y="0.0" width="600" height="152.5"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="600" height="152"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
                                         <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="BookSample4" translatesAutoresizingMaskIntoConstraints="NO" id="Fmh-hm-oIU">
@@ -722,13 +723,13 @@
                                             <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
                                             <nil key="highlightedColor"/>
                                         </label>
-                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="地点：西安软件园- 西安市" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="GL2-dX-VLu">
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="地点：西安软件园- 西安市" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="GL2-dX-VLu">
                                             <rect key="frame" x="109" y="94" width="142" height="15"/>
                                             <fontDescription key="fontDescription" type="system" pointSize="12"/>
                                             <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                             <nil key="highlightedColor"/>
                                         </label>
-                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="距离：2000km" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="M2q-oa-8nM">
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="距离：2000km" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="M2q-oa-8nM">
                                             <rect key="frame" x="109" y="117" width="83" height="15"/>
                                             <fontDescription key="fontDescription" type="system" pointSize="12"/>
                                             <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
@@ -805,7 +806,7 @@
                                 <rect key="frame" x="0.0" y="86" width="600" height="153"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="msd-jF-my2" id="U0k-Ui-coO">
-                                    <rect key="frame" x="0.0" y="0.0" width="600" height="152.5"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="600" height="152"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
                                         <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="BookSample2" translatesAutoresizingMaskIntoConstraints="NO" id="XG1-d0-oAK">
@@ -827,19 +828,19 @@
                                             <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
                                             <nil key="highlightedColor"/>
                                         </label>
-                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="这本书从心智成长的角度来谈时间管理，指出时间管理是成功的关键所在。作者引述自己从事的职业中所遇到的事例，告诉我们：如何打开心智，如何运用心智来和时间做朋友，如何理解时间管理的意义，在时间管理上取得突破，进而用心智开启自己的人生成功之旅。" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Tn3-f0-pLy">
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="这本书从心智成长的角度来谈时间管理，指出时间管理是成功的关键所在。作者引述自己从事的职业中所遇到的事例，告诉我们：如何打开心智，如何运用心智来和时间做朋友，如何理解时间管理的意义，在时间管理上取得突破，进而用心智开启自己的人生成功之旅。" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Tn3-f0-pLy">
                                             <rect key="frame" x="109" y="56" width="483" height="29"/>
                                             <fontDescription key="fontDescription" type="system" pointSize="12"/>
                                             <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
                                             <nil key="highlightedColor"/>
                                         </label>
-                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="提示：剩余13天" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="HFq-Uh-YMk">
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="提示：剩余13天" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="HFq-Uh-YMk">
                                             <rect key="frame" x="109" y="117" width="86" height="15"/>
                                             <fontDescription key="fontDescription" type="system" pointSize="12"/>
                                             <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                             <nil key="highlightedColor"/>
                                         </label>
-                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="已读：2天" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gUn-fG-ADc">
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="已读：2天" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gUn-fG-ADc">
                                             <rect key="frame" x="109" y="94" width="56" height="15"/>
                                             <fontDescription key="fontDescription" type="system" pointSize="12"/>
                                             <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
@@ -875,7 +876,7 @@
                                 <rect key="frame" x="0.0" y="239" width="600" height="153"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="3W0-D2-dML" id="EFZ-CT-8Ci">
-                                    <rect key="frame" x="0.0" y="0.0" width="600" height="152.5"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="600" height="152"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
                                         <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="BookSample4" translatesAutoresizingMaskIntoConstraints="NO" id="9HJ-fk-Xyo">
@@ -897,19 +898,19 @@
                                             <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
                                             <nil key="highlightedColor"/>
                                         </label>
-                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="已读：14天" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="f7u-YX-rBO">
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="已读：14天" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="f7u-YX-rBO">
                                             <rect key="frame" x="109" y="94" width="62" height="15"/>
                                             <fontDescription key="fontDescription" type="system" pointSize="12"/>
                                             <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                             <nil key="highlightedColor"/>
                                         </label>
-                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="提示：剩余1天" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="BKs-6L-atj">
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="提示：剩余1天" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="BKs-6L-atj">
                                             <rect key="frame" x="109" y="117" width="78" height="15"/>
                                             <fontDescription key="fontDescription" type="system" pointSize="12"/>
                                             <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                             <nil key="highlightedColor"/>
                                         </label>
-                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="j26-75-cHn">
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="j26-75-cHn">
                                             <rect key="frame" x="109" y="56" width="483" height="29"/>
                                             <string key="text">自喻为“玉面小飞龙”的郑微，洋溢着青春活力，心怀着对邻家哥哥林静浓浓的爱意，来到大学。可是当她联系林静的时候，却发现出国的林静并没有告诉她任何消息。生性豁达的她，埋藏起自己的爱情，享受大学时代的快乐生活。却意外地爱上同学校的陈孝正，板正、自闭而又敏感、自尊的陈孝正却在毕业的时候又选择了出国放弃了郑微。</string>
                                             <fontDescription key="fontDescription" type="system" pointSize="12"/>
@@ -938,7 +939,7 @@
                                 <rect key="frame" x="0.0" y="392" width="600" height="153"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="UyZ-wn-7ri" id="Pio-rw-a7v">
-                                    <rect key="frame" x="0.0" y="0.0" width="600" height="152.5"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="600" height="152"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
                                         <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="BookSample1" translatesAutoresizingMaskIntoConstraints="NO" id="hMe-wb-4uo">
@@ -960,19 +961,19 @@
                                             <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
                                             <nil key="highlightedColor"/>
                                         </label>
-                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="现代人内心流失的东西，这家杂货店能帮你找回—— 僻静的街道旁有一家杂货店，只要写下烦恼投进卷帘门的投信口，第二天就会在店后的牛奶箱里得到回答。因男友身患绝症，年轻女孩静子在爱情与梦想间徘徊" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="apN-P2-oOs">
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="现代人内心流失的东西，这家杂货店能帮你找回—— 僻静的街道旁有一家杂货店，只要写下烦恼投进卷帘门的投信口，第二天就会在店后的牛奶箱里得到回答。因男友身患绝症，年轻女孩静子在爱情与梦想间徘徊" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="apN-P2-oOs">
                                             <rect key="frame" x="109" y="56" width="483" height="29"/>
                                             <fontDescription key="fontDescription" type="system" pointSize="12"/>
                                             <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
                                             <nil key="highlightedColor"/>
                                         </label>
-                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="已读：12天" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="O7U-Ex-viC">
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="已读：12天" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="O7U-Ex-viC">
                                             <rect key="frame" x="109" y="94" width="61" height="15"/>
                                             <fontDescription key="fontDescription" type="system" pointSize="12"/>
                                             <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                             <nil key="highlightedColor"/>
                                         </label>
-                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="提示：剩余3天" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fTN-js-ttt">
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="提示：剩余3天" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fTN-js-ttt">
                                             <rect key="frame" x="109" y="117" width="80" height="15"/>
                                             <fontDescription key="fontDescription" type="system" pointSize="12"/>
                                             <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
@@ -1000,7 +1001,7 @@
                                 <rect key="frame" x="0.0" y="545" width="600" height="153"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="vzn-kq-AzG" id="YG7-8n-dXL">
-                                    <rect key="frame" x="0.0" y="0.0" width="600" height="152.5"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="600" height="152"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
                                         <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="BookSample3" translatesAutoresizingMaskIntoConstraints="NO" id="kMR-tP-AeQ">
@@ -1022,13 +1023,13 @@
                                             <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
                                             <nil key="highlightedColor"/>
                                         </label>
-                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="读过" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0r8-Dm-jDz">
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="读过" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0r8-Dm-jDz">
                                             <rect key="frame" x="109" y="94" width="24" height="15"/>
                                             <fontDescription key="fontDescription" type="system" pointSize="12"/>
                                             <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                             <nil key="highlightedColor"/>
                                         </label>
-                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qu6-uh-MEX">
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qu6-uh-MEX">
                                             <rect key="frame" x="109" y="56" width="483" height="29"/>
                                             <string key="text">在科技剧烈改变世界的今天，想要成功，你必须在一切发生之前研究结局。 你必须找到创新的独特方式，让未来不仅仅与众不同，而且更加美好。 从0到1，为自己创造无限的机会与价值！ Paypal创始人、Facebook第一位外部投资者彼得•蒂尔在本书中详细阐述了自己的创业历程与心得，包括如何避免竞争、如何进行垄断、如何发现新的市场。</string>
                                             <fontDescription key="fontDescription" type="system" pointSize="12"/>
@@ -1070,6 +1071,7 @@
                     <size key="freeformSize" width="600" height="720"/>
                     <connections>
                         <outlet property="acceptBookTable" destination="DNZ-yS-s6S" id="jbh-9z-Fpy"/>
+                        <segue destination="8pz-eP-OIM" kind="show" identifier="BookDetailSegue" id="yoT-ny-wa4"/>
                     </connections>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="fzh-NM-tOv" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -1088,110 +1090,121 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="720"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleAspectFill" image="BookSample3" translatesAutoresizingMaskIntoConstraints="NO" id="P2B-aC-JRt">
-                                <rect key="frame" x="480" y="84" width="100" height="143.5"/>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="4ad-5b-nnV">
+                                <rect key="frame" x="0.0" y="64" width="600" height="607"/>
+                                <subviews>
+                                    <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleAspectFill" image="BookSample3" translatesAutoresizingMaskIntoConstraints="NO" id="P2B-aC-JRt">
+                                        <rect key="frame" x="494" y="16" width="90" height="129"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="90" id="RT5-jV-PTK"/>
+                                            <constraint firstAttribute="width" secondItem="P2B-aC-JRt" secondAttribute="height" multiplier="143:205" id="oCW-j3-frp"/>
+                                        </constraints>
+                                    </imageView>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="从0到1-开启商业与未来的秘密" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yfr-Bf-Np9">
+                                        <rect key="frame" x="16" y="16" width="231" height="21"/>
+                                        <fontDescription key="fontDescription" type="system" weight="medium" pointSize="17"/>
+                                        <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="作者：彼得戴尔" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="aF0-YN-nII">
+                                        <rect key="frame" x="16" y="47" width="91" height="16"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                                        <color key="textColor" red="0.49803921580314636" green="0.49803921580314636" blue="0.49803921580314636" alpha="1" colorSpace="calibratedRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="捐赠人：" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="y61-ac-jer">
+                                        <rect key="frame" x="127" y="47" width="52" height="16"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                                        <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="持有人：" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="IKn-Iz-TbM">
+                                        <rect key="frame" x="16" y="80" width="52" height="16"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                                        <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="龚铭" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qXK-Cv-wd6">
+                                        <rect key="frame" x="179" y="47" width="26" height="16"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                                        <color key="textColor" red="0.011764705882352941" green="0.47843137254901963" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="索大师" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pGz-Vw-2Oy">
+                                        <rect key="frame" x="68" y="80" width="39" height="16"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                                        <color key="textColor" red="0.011764705882352941" green="0.47843137254901963" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="漂流历程" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="IaO-T3-5SA">
+                                        <rect key="frame" x="16" y="265" width="60" height="18"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                        <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Bgp-oM-aYn" userLabel="Line">
+                                        <rect key="frame" x="16" y="291" width="568" height="1"/>
+                                        <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="1" id="7kX-1x-td7"/>
+                                        </constraints>
+                                    </view>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="J0Q-6C-aBJ">
+                                        <rect key="frame" x="16" y="109" width="105" height="30"/>
+                                        <color key="backgroundColor" red="0.01176470588" green="0.47843137250000001" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="105" id="B1A-Wp-ceO"/>
+                                        </constraints>
+                                        <state key="normal" title="求漂">
+                                            <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="clickActionBtn:" destination="8pz-eP-OIM" eventType="touchUpInside" id="BRs-kT-67Y"/>
+                                        </connections>
+                                    </button>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="DpU-17-yaw">
+                                        <rect key="frame" x="16" y="176" width="568" height="63"/>
+                                        <string key="text">在科技剧烈改变世界的今天，想要成功，你必须在一切发生之前研究结局。 你必须找到创新的独特方式，让未来不仅仅与众不同，而且更加美好。 从0到1，为自己创造无限的机会与价值！ Paypal创始人、Facebook第一位外部投资者彼得•蒂尔在本书中详细阐述了自己的创业历程与心得，包括如何避免竞争、如何进行垄断、如何发现新的市场。</string>
+                                        <fontDescription key="fontDescription" type="system" weight="light" pointSize="13"/>
+                                        <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <constraints>
-                                    <constraint firstAttribute="width" constant="100" id="RT5-jV-PTK"/>
-                                    <constraint firstAttribute="width" secondItem="P2B-aC-JRt" secondAttribute="height" multiplier="143:205" id="oCW-j3-frp"/>
-                                </constraints>
-                            </imageView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="从0到1-开启商业与未来的秘密" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yfr-Bf-Np9">
-                                <rect key="frame" x="20" y="84" width="450" height="20.5"/>
-                                <fontDescription key="fontDescription" type="system" weight="medium" pointSize="17"/>
-                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="作者：彼得戴尔" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="aF0-YN-nII">
-                                <rect key="frame" x="20" y="112" width="91" height="16"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="13"/>
-                                <color key="textColor" red="0.49803921580314636" green="0.49803921580314636" blue="0.49803921580314636" alpha="1" colorSpace="calibratedRGB"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="捐赠人：" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="y61-ac-jer">
-                                <rect key="frame" x="20" y="136" width="60" height="18"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="15"/>
-                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="持有人：" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="IKn-Iz-TbM">
-                                <rect key="frame" x="20" y="162" width="60" height="18"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="15"/>
-                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="龚铭" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qXK-Cv-wd6">
-                                <rect key="frame" x="80" y="136" width="30" height="18"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="15"/>
-                                <color key="textColor" red="0.011764705882352941" green="0.47843137254901963" blue="1" alpha="1" colorSpace="calibratedRGB"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="索大师" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pGz-Vw-2Oy">
-                                <rect key="frame" x="80" y="162" width="45" height="18"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="15"/>
-                                <color key="textColor" red="0.011764705882352941" green="0.47843137254901963" blue="1" alpha="1" colorSpace="calibratedRGB"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="DpU-17-yaw">
-                                <rect key="frame" x="20" y="240" width="560" height="62.5"/>
-                                <string key="text">在科技剧烈改变世界的今天，想要成功，你必须在一切发生之前研究结局。 你必须找到创新的独特方式，让未来不仅仅与众不同，而且更加美好。 从0到1，为自己创造无限的机会与价值！ Paypal创始人、Facebook第一位外部投资者彼得•蒂尔在本书中详细阐述了自己的创业历程与心得，包括如何避免竞争、如何进行垄断、如何发现新的市场。</string>
-                                <fontDescription key="fontDescription" type="system" weight="light" pointSize="13"/>
-                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="漂流历程" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="IaO-T3-5SA">
-                                <rect key="frame" x="20" y="328" width="68" height="20.5"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Bgp-oM-aYn" userLabel="Line">
-                                <rect key="frame" x="20" y="356.5" width="560" height="1"/>
-                                <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="1" id="7kX-1x-td7"/>
+                                    <constraint firstItem="DpU-17-yaw" firstAttribute="trailing" secondItem="P2B-aC-JRt" secondAttribute="trailing" id="0xE-xq-a9c"/>
+                                    <constraint firstItem="Bgp-oM-aYn" firstAttribute="top" secondItem="IaO-T3-5SA" secondAttribute="bottom" constant="8" id="4Ft-iF-wo1"/>
+                                    <constraint firstItem="IKn-Iz-TbM" firstAttribute="leading" secondItem="aF0-YN-nII" secondAttribute="leading" id="6DM-Gw-ZJU"/>
+                                    <constraint firstAttribute="trailing" secondItem="P2B-aC-JRt" secondAttribute="trailing" constant="16" id="6b7-a6-ikj"/>
+                                    <constraint firstItem="pGz-Vw-2Oy" firstAttribute="leading" secondItem="IKn-Iz-TbM" secondAttribute="trailing" id="8C9-gg-AW6"/>
+                                    <constraint firstItem="DpU-17-yaw" firstAttribute="top" secondItem="J0Q-6C-aBJ" secondAttribute="bottom" constant="37" id="AOS-V8-bap"/>
+                                    <constraint firstItem="aF0-YN-nII" firstAttribute="top" secondItem="yfr-Bf-Np9" secondAttribute="bottom" constant="10.5" id="GBJ-z6-Z1p"/>
+                                    <constraint firstItem="IaO-T3-5SA" firstAttribute="top" secondItem="DpU-17-yaw" secondAttribute="bottom" constant="26.5" id="Hfp-IM-lkM"/>
+                                    <constraint firstItem="qXK-Cv-wd6" firstAttribute="centerY" secondItem="y61-ac-jer" secondAttribute="centerY" id="O2b-pS-Re2"/>
+                                    <constraint firstItem="yfr-Bf-Np9" firstAttribute="leading" secondItem="4ad-5b-nnV" secondAttribute="leading" constant="16" id="Pio-K2-viT"/>
+                                    <constraint firstItem="pGz-Vw-2Oy" firstAttribute="centerY" secondItem="IKn-Iz-TbM" secondAttribute="centerY" id="Rk3-aV-d8J"/>
+                                    <constraint firstItem="yfr-Bf-Np9" firstAttribute="top" secondItem="4ad-5b-nnV" secondAttribute="top" constant="16" id="SCc-Hb-XTO"/>
+                                    <constraint firstItem="Bgp-oM-aYn" firstAttribute="leading" secondItem="IaO-T3-5SA" secondAttribute="leading" id="VjY-rh-wjr"/>
+                                    <constraint firstItem="P2B-aC-JRt" firstAttribute="top" secondItem="yfr-Bf-Np9" secondAttribute="top" id="WvA-L7-ihW"/>
+                                    <constraint firstItem="IKn-Iz-TbM" firstAttribute="top" secondItem="aF0-YN-nII" secondAttribute="bottom" constant="17" id="dc3-fX-5GD"/>
+                                    <constraint firstItem="J0Q-6C-aBJ" firstAttribute="leading" secondItem="IKn-Iz-TbM" secondAttribute="leading" id="fhn-3d-uJo"/>
+                                    <constraint firstItem="J0Q-6C-aBJ" firstAttribute="top" secondItem="IKn-Iz-TbM" secondAttribute="bottom" constant="13" id="ft6-WL-Rjz"/>
+                                    <constraint firstItem="IaO-T3-5SA" firstAttribute="leading" secondItem="DpU-17-yaw" secondAttribute="leading" id="glB-ze-LSZ"/>
+                                    <constraint firstItem="y61-ac-jer" firstAttribute="leading" secondItem="aF0-YN-nII" secondAttribute="trailing" constant="20" id="mwf-Nl-lf7"/>
+                                    <constraint firstItem="DpU-17-yaw" firstAttribute="leading" secondItem="J0Q-6C-aBJ" secondAttribute="leading" id="o38-dp-3Ll"/>
+                                    <constraint firstItem="Bgp-oM-aYn" firstAttribute="trailing" secondItem="DpU-17-yaw" secondAttribute="trailing" id="oq9-9g-z3S"/>
+                                    <constraint firstItem="y61-ac-jer" firstAttribute="centerY" secondItem="aF0-YN-nII" secondAttribute="centerY" id="sIY-Oa-YfB"/>
+                                    <constraint firstItem="aF0-YN-nII" firstAttribute="leading" secondItem="yfr-Bf-Np9" secondAttribute="leading" id="uyI-av-iOu"/>
+                                    <constraint firstItem="qXK-Cv-wd6" firstAttribute="leading" secondItem="y61-ac-jer" secondAttribute="trailing" id="vfp-1l-OGZ"/>
                                 </constraints>
                             </view>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="J0Q-6C-aBJ">
-                                <rect key="frame" x="20" y="193" width="105" height="30"/>
-                                <color key="backgroundColor" red="0.01176470588" green="0.47843137250000001" blue="1" alpha="1" colorSpace="calibratedRGB"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" constant="105" id="B1A-Wp-ceO"/>
-                                </constraints>
-                                <state key="normal" title="求漂">
-                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
-                                </state>
-                                <connections>
-                                    <action selector="clickActionBtn:" destination="8pz-eP-OIM" eventType="touchUpInside" id="BRs-kT-67Y"/>
-                                </connections>
-                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstItem="J0Q-6C-aBJ" firstAttribute="leading" secondItem="yfr-Bf-Np9" secondAttribute="leading" id="2HF-dE-MTe"/>
-                            <constraint firstItem="J0Q-6C-aBJ" firstAttribute="top" secondItem="IKn-Iz-TbM" secondAttribute="bottom" constant="13" id="39b-ym-hGl"/>
-                            <constraint firstItem="Bgp-oM-aYn" firstAttribute="leading" secondItem="dmd-QC-98m" secondAttribute="leadingMargin" id="3T6-9W-tuZ"/>
-                            <constraint firstItem="P2B-aC-JRt" firstAttribute="leading" secondItem="yfr-Bf-Np9" secondAttribute="trailing" constant="10" id="7fY-qq-0qN"/>
-                            <constraint firstItem="DpU-17-yaw" firstAttribute="top" secondItem="J0Q-6C-aBJ" secondAttribute="bottom" constant="17" id="8mg-DT-gA3"/>
-                            <constraint firstItem="IaO-T3-5SA" firstAttribute="leading" secondItem="yfr-Bf-Np9" secondAttribute="leading" id="Ad2-gb-nfn"/>
-                            <constraint firstItem="P2B-aC-JRt" firstAttribute="trailing" secondItem="dmd-QC-98m" secondAttribute="trailingMargin" id="AfB-xU-Tpp"/>
-                            <constraint firstItem="qXK-Cv-wd6" firstAttribute="centerY" secondItem="y61-ac-jer" secondAttribute="centerY" id="Eqf-JH-ukS"/>
-                            <constraint firstItem="y61-ac-jer" firstAttribute="top" secondItem="aF0-YN-nII" secondAttribute="bottom" constant="8" id="Fm9-XR-Lt0"/>
-                            <constraint firstItem="pGz-Vw-2Oy" firstAttribute="leading" secondItem="IKn-Iz-TbM" secondAttribute="trailing" id="GKt-tT-L4E"/>
-                            <constraint firstItem="IaO-T3-5SA" firstAttribute="top" secondItem="DpU-17-yaw" secondAttribute="bottom" constant="25.5" id="Gij-NJ-Sd6"/>
-                            <constraint firstItem="aF0-YN-nII" firstAttribute="leading" secondItem="yfr-Bf-Np9" secondAttribute="leading" id="MM5-Ff-ILu"/>
-                            <constraint firstItem="IKn-Iz-TbM" firstAttribute="leading" secondItem="yfr-Bf-Np9" secondAttribute="leading" id="NBb-tQ-UT5"/>
-                            <constraint firstItem="IKn-Iz-TbM" firstAttribute="top" secondItem="y61-ac-jer" secondAttribute="bottom" constant="8" id="Q1H-5z-eTP"/>
-                            <constraint firstItem="Bgp-oM-aYn" firstAttribute="top" secondItem="IaO-T3-5SA" secondAttribute="bottom" constant="8" id="Wxf-ea-T3s"/>
-                            <constraint firstItem="P2B-aC-JRt" firstAttribute="top" secondItem="Qke-CG-NMB" secondAttribute="bottom" constant="20" id="X9m-DQ-8Jp"/>
-                            <constraint firstItem="DpU-17-yaw" firstAttribute="trailing" secondItem="P2B-aC-JRt" secondAttribute="trailing" id="Zfg-c2-RAh"/>
-                            <constraint firstItem="qXK-Cv-wd6" firstAttribute="leading" secondItem="y61-ac-jer" secondAttribute="trailing" id="bPC-oB-of2"/>
-                            <constraint firstItem="yfr-Bf-Np9" firstAttribute="leading" secondItem="dmd-QC-98m" secondAttribute="leadingMargin" id="fGz-BV-5A9"/>
-                            <constraint firstItem="y61-ac-jer" firstAttribute="leading" secondItem="yfr-Bf-Np9" secondAttribute="leading" id="gcL-P4-8tN"/>
-                            <constraint firstItem="aF0-YN-nII" firstAttribute="top" secondItem="yfr-Bf-Np9" secondAttribute="bottom" constant="8" id="mM5-qU-yHg"/>
-                            <constraint firstItem="DpU-17-yaw" firstAttribute="leading" secondItem="yfr-Bf-Np9" secondAttribute="leading" id="my0-z9-YQp"/>
-                            <constraint firstItem="pGz-Vw-2Oy" firstAttribute="centerY" secondItem="IKn-Iz-TbM" secondAttribute="centerY" id="v2W-8s-2Nm"/>
-                            <constraint firstItem="Bgp-oM-aYn" firstAttribute="trailing" secondItem="dmd-QC-98m" secondAttribute="trailingMargin" id="vDo-VO-h7i"/>
-                            <constraint firstItem="yfr-Bf-Np9" firstAttribute="top" secondItem="P2B-aC-JRt" secondAttribute="top" id="vhr-7n-yHY"/>
+                            <constraint firstItem="4ad-5b-nnV" firstAttribute="top" secondItem="Qke-CG-NMB" secondAttribute="bottom" id="SWJ-iG-GGb"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="4ad-5b-nnV" secondAttribute="trailing" constant="-20" id="WBJ-yE-xU0"/>
+                            <constraint firstItem="4ad-5b-nnV" firstAttribute="leading" secondItem="dmd-QC-98m" secondAttribute="leadingMargin" constant="-20" id="s4o-DB-HSd"/>
+                            <constraint firstItem="4hE-YL-Lv6" firstAttribute="top" secondItem="4ad-5b-nnV" secondAttribute="bottom" id="xeR-Ok-MoX"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="图书详情" id="Aze-CE-PJL"/>
@@ -1233,11 +1246,11 @@
                                         <rect key="frame" x="0.0" y="22" width="600" height="120"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="3p6-Lm-rHZ" id="AG6-k2-MHC">
-                                            <rect key="frame" x="0.0" y="0.0" width="600" height="119.5"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="600" height="119"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="BookSample1" translatesAutoresizingMaskIntoConstraints="NO" id="aC3-03-5Qc">
-                                                    <rect key="frame" x="16" y="12" width="60" height="91.5"/>
+                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="BookSample1" translatesAutoresizingMaskIntoConstraints="NO" id="aC3-03-5Qc">
+                                                    <rect key="frame" x="16" y="12" width="60" height="92"/>
                                                     <constraints>
                                                         <constraint firstAttribute="width" constant="60" id="FDC-LW-K57"/>
                                                         <constraint firstAttribute="width" secondItem="aC3-03-5Qc" secondAttribute="height" multiplier="85:128" id="m6F-71-Hb7"/>
@@ -1250,12 +1263,12 @@
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="東野圭吾" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="sg1-CT-oAf">
-                                                    <rect key="frame" x="84" y="34" width="48" height="14.5"/>
+                                                    <rect key="frame" x="84" y="34" width="48" height="15"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="12"/>
                                                     <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="现代人内心流失的东西，这家杂货店能帮你找回—— 僻静的街道旁有一家杂货店，只要写下烦恼投进卷帘门的投信口，第二天就会在店后的牛奶箱里得到回答。因男友身患绝症，年轻女孩静子在爱情与梦想间徘徊" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zBx-IK-3NU">
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="现代人内心流失的东西，这家杂货店能帮你找回—— 僻静的街道旁有一家杂货店，只要写下烦恼投进卷帘门的投信口，第二天就会在店后的牛奶箱里得到回答。因男友身患绝症，年轻女孩静子在爱情与梦想间徘徊" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zBx-IK-3NU">
                                                     <rect key="frame" x="84" y="56" width="508" height="43"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="12"/>
                                                     <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
@@ -1416,7 +1429,7 @@
                                         <rect key="frame" x="0.0" y="64" width="600" height="74"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="QuR-gU-Opw" id="BYf-Hn-5K3">
-                                            <rect key="frame" x="0.0" y="0.0" width="600" height="73.5"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="600" height="73"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="DefaultAvatar" translatesAutoresizingMaskIntoConstraints="NO" id="65O-UI-f0O">
@@ -1461,7 +1474,7 @@
                                         <rect key="frame" x="0.0" y="138" width="600" height="74"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="o3x-ga-5C3" id="ymN-Si-Tvl">
-                                            <rect key="frame" x="0.0" y="0.0" width="600" height="73.5"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="600" height="73"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="DefaultAvatar3" translatesAutoresizingMaskIntoConstraints="NO" id="qV4-fL-pU8">
@@ -1506,7 +1519,7 @@
                                         <rect key="frame" x="0.0" y="212" width="600" height="74"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="nm2-Bu-dYm" id="Lqf-v4-UoF">
-                                            <rect key="frame" x="0.0" y="0.0" width="600" height="73.5"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="600" height="73"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="DefaultAvatar2" translatesAutoresizingMaskIntoConstraints="NO" id="ODG-xR-HKB">
@@ -1551,7 +1564,7 @@
                                         <rect key="frame" x="0.0" y="286" width="600" height="74"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="u1G-7G-pUo" id="PGi-XK-QfS">
-                                            <rect key="frame" x="0.0" y="0.0" width="600" height="73.5"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="600" height="73"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="DefaultAvatar1" translatesAutoresizingMaskIntoConstraints="NO" id="oYK-fO-VzL">
@@ -1596,7 +1609,7 @@
                                         <rect key="frame" x="0.0" y="360" width="600" height="74"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="wzE-Nl-aeh" id="4qj-Th-DAy">
-                                            <rect key="frame" x="0.0" y="0.0" width="600" height="73.5"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="600" height="73"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Ao Zhu" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yt0-ws-YoA">
@@ -1672,6 +1685,23 @@
             </objects>
             <point key="canvasLocation" x="1427" y="1244"/>
         </scene>
+        <!--View Controller-->
+        <scene sceneID="lvH-m9-dNf">
+            <objects>
+                <viewController id="W7j-x1-Ird" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="WXE-zh-1YT"/>
+                        <viewControllerLayoutGuide type="bottom" id="Fo3-WK-qaW"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="58n-5g-ZBQ">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="OfZ-qy-0EH" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+        </scene>
     </scenes>
     <resources>
         <image name="BookSample1" width="102" height="145"/>
@@ -1692,4 +1722,7 @@
         <image name="IconNotebook" width="18" height="21"/>
         <image name="IconWorld" width="24" height="24"/>
     </resources>
+    <inferredMetricsTieBreakers>
+        <segue reference="yoT-ny-wa4"/>
+    </inferredMetricsTieBreakers>
 </document>

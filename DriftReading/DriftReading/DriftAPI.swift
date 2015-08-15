@@ -113,4 +113,18 @@ class DriftAPI: NSObject {
         )
     }
     
+    func updateBookStatus(userId: String, bookId: String, status: String, success: (book: Book) -> Void, failure: (error: APIError) -> Void) {
+        let postParams = ["status": status]
+        apiSessionManager.PUT("/api/users/\(userId)/books/\(bookId)",
+            parameters: postParams,
+            success: { (session:NSURLSessionDataTask!, responseObject: AnyObject!) -> Void in
+                let responseJson = responseObject as! [String: AnyObject]
+                success(book: Book(json: responseJson))
+            },
+            failure: { error in
+                failure(error: error)
+            }
+        )
+    }
+    
 }

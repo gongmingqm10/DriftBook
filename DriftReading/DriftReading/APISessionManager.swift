@@ -24,6 +24,11 @@ class APISessionManager: NSObject {
         return sessionManager.POST(URLString, parameters: parameters, success: success, failure: buildAPIError(failure))
     }
     
+    func PUT(URLString: String!, parameters: AnyObject!, success: ((NSURLSessionDataTask!, AnyObject!) -> Void)!, failure: ((APIError) -> Void)!) -> NSURLSessionDataTask! {
+        
+        return sessionManager.PUT(URLString, parameters: parameters, success: success, failure: buildAPIError(failure))
+    }
+    
     func GET(URLString: String!, parameters: AnyObject!, success: ((NSURLSessionDataTask!, AnyObject!) -> Void)!, failure: ((APIError) -> Void)!) -> NSURLSessionDataTask! {
         
         return sessionManager.GET(URLString, parameters: parameters, success: success, failure: buildAPIError(failure))

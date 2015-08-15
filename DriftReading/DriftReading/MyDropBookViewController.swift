@@ -13,7 +13,7 @@ class MyDropBookViewController: UITableViewController {
     @IBOutlet var dropTableView: UITableView!
     let driftAPI = DriftAPI()
     var books: [Book] = []
-    
+
     override func viewDidLoad() {
         let user = DataUtils.sharedInstance.currentUser()
         driftAPI.getOweBooks(user.userId, success: { (books) -> Void in
@@ -36,7 +36,32 @@ class MyDropBookViewController: UITableViewController {
         let cell = dropTableView.dequeueReusableCellWithIdentifier("MyBookCell", forIndexPath: indexPath) as! MyBookCell
         let book = books[indexPath.row]
         cell.populate(book)
+        cell.receiveBtn.addTarget(self, action: "receiveBook:", forControlEvents:UIControlEvents.TouchUpInside)
+
+        cell.onButtonTapped = {(book) -> Void in
+            let message = book.status == "stop" ? "重新放漂之后，你的图书将处于可借阅状态。确定继续吗？" : "收漂之后，你的漂友将不能继续阅读你的图书。确定继续吗？"
+            let status = book.status == "stop" ? "drifting" : "stop"
+            
+            let alertController = UIAlertController(title: "提示", message: message, preferredStyle: UIAlertControllerStyle.Alert)
+            alertController.addAction(UIAlertAction(title: "确定", style: UIAlertActionStyle.Default, handler: {(alert: UIAlertAction!) in
+                let currentUser = DataUtils.sharedInstance.currentUser()
+                self.driftAPI.updateBookStatus(currentUser.userId, bookId: (book.id)!, status: status, success: {(book) -> Void in
+                    cell.populate(book)
+                    }, failure: {(error) -> Void in
+                        self.showErrorMessage(error)
+                })
+            }))
+            alertController.addAction(UIAlertAction(title: "取消", style: UIAlertActionStyle.Cancel, handler: nil))
+            self.presentViewController(alertController, animated: true, completion: nil)
+        }
+
         return cell
+    }
+    
+    private func showErrorMessage(error: APIError) {
+        let alertController = UIAlertController(title: "错误", message: error.message, preferredStyle: UIAlertControllerStyle.Alert)
+        alertController.addAction(UIAlertAction(title: "确定", style: UIAlertActionStyle.Default, handler: nil))
+        self.presentViewController(alertController, animated: true, completion: nil)
     }
 
 }

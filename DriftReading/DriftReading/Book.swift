@@ -27,6 +27,7 @@ class Book: NSObject {
         self.summary = json["summary"] as! String
         self.status = json["summary"] as! String
         self.imageUrl = json["image"] as? String
+        self.status = json["status"] as! String
         if let addressJson = json["address"] {
             self.address = Address(json: addressJson as! [String: AnyObject])
         }

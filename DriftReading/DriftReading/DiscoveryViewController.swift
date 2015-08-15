@@ -20,7 +20,7 @@ class DiscoveryViewController: UITableViewController {
     
     var selectedBook: Book?
     
-    override func viewDidLoad() {
+    override func viewDidAppear(animated: Bool) {
         loadBooksByType(TYPE_DRIFTING)
     }
     
