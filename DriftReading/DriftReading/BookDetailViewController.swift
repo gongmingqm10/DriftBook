@@ -40,7 +40,7 @@ class BookDetailViewController: UIViewController {
             }
             self.initBookStatus()
             }) { (error) -> Void in
-                print(error)
+                self.dismissViewControllerAnimated(true, completion: {});
         }
     }
     

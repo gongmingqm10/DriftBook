@@ -14,8 +14,8 @@ class User
   attr_accessor :password
 
   embeds_one :address, class_name: 'Address'
-  has_many :own_books, class_name: 'Book', inverse_of: :user
-  has_many :hold_books, class_name: 'Book', inverse_of: :user
+  has_many :own_books, class_name: 'Book', inverse_of: :owner
+  has_many :hold_books, class_name: 'Book', inverse_of: :holder
   has_many :events, class_name: 'Event', inverse_of: :user
   has_many :messages_send, class_name: 'Message', inverse_of: :sender
   has_many :messages_receive, class_name: 'Message', inverse_of: :receiver

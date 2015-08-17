@@ -102,7 +102,7 @@ class DriftAPI: NSObject {
     
     func createDoubanBook(userId: String, book: DoubanBook, success: () -> Void, failure: (error: APIError) -> Void) {
         let postParams = ["doubanid": book.doubanid, "name": book.name, "summary": book.summary, "author": book.author.first, "image": book.imageUrl]
-        apiSessionManager.POST("/api/users/\(userId)/upload_book",
+        apiSessionManager.POST("/api/users/\(userId)/books",
             parameters: postParams,
             success: { (session:NSURLSessionDataTask!, responseObject: AnyObject!) -> Void in
                 success()
