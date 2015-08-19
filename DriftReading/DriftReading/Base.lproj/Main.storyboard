@@ -487,11 +487,12 @@
                     </tableView>
                     <connections>
                         <outlet property="dropTableView" destination="Oed-wZ-5NK" id="oFO-m4-RO9"/>
+                        <segue destination="8pz-eP-OIM" kind="show" identifier="MyDropBookDetail" id="LIz-my-b6G"/>
                     </connections>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="07M-XK-BBy" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2911" y="2005"/>
+            <point key="canvasLocation" x="2197" y="2735"/>
         </scene>
         <!--Discovery View Controller-->
         <scene sceneID="5Ku-FC-teB">
@@ -1087,10 +1088,10 @@
                         <viewControllerLayoutGuide type="bottom" id="4hE-YL-Lv6"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="dmd-QC-98m">
-                        <rect key="frame" x="0.0" y="0.0" width="600" height="720"/>
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="4ad-5b-nnV">
+                            <view contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="4ad-5b-nnV">
                                 <rect key="frame" x="0.0" y="64" width="600" height="607"/>
                                 <subviews>
                                     <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleAspectFill" image="BookSample3" translatesAutoresizingMaskIntoConstraints="NO" id="P2B-aC-JRt">
@@ -1101,56 +1102,56 @@
                                         </constraints>
                                     </imageView>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="从0到1-开启商业与未来的秘密" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yfr-Bf-Np9">
-                                        <rect key="frame" x="16" y="16" width="231" height="21"/>
+                                        <rect key="frame" x="16" y="16" width="470" height="20.5"/>
                                         <fontDescription key="fontDescription" type="system" weight="medium" pointSize="17"/>
                                         <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                         <nil key="highlightedColor"/>
                                     </label>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="作者：彼得戴尔" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="aF0-YN-nII">
-                                        <rect key="frame" x="16" y="47" width="91" height="16"/>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="作者：彼得戴尔" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="aF0-YN-nII">
+                                        <rect key="frame" x="16" y="46" width="91" height="16"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="13"/>
                                         <color key="textColor" red="0.49803921580314636" green="0.49803921580314636" blue="0.49803921580314636" alpha="1" colorSpace="calibratedRGB"/>
                                         <nil key="highlightedColor"/>
                                     </label>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="捐赠人：" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="y61-ac-jer">
-                                        <rect key="frame" x="127" y="47" width="52" height="16"/>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="捐赠人：" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="y61-ac-jer">
+                                        <rect key="frame" x="127" y="46" width="52" height="16"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="13"/>
                                         <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                         <nil key="highlightedColor"/>
                                     </label>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="持有人：" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="IKn-Iz-TbM">
-                                        <rect key="frame" x="16" y="80" width="52" height="16"/>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="持有人：" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="IKn-Iz-TbM">
+                                        <rect key="frame" x="16" y="79" width="52" height="16"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="13"/>
                                         <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                         <nil key="highlightedColor"/>
                                     </label>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="龚铭" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qXK-Cv-wd6">
-                                        <rect key="frame" x="179" y="47" width="26" height="16"/>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="龚铭" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qXK-Cv-wd6">
+                                        <rect key="frame" x="179" y="46" width="26" height="16"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="13"/>
                                         <color key="textColor" red="0.011764705882352941" green="0.47843137254901963" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                         <nil key="highlightedColor"/>
                                     </label>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="索大师" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pGz-Vw-2Oy">
-                                        <rect key="frame" x="68" y="80" width="39" height="16"/>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="索大师" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pGz-Vw-2Oy">
+                                        <rect key="frame" x="68" y="79" width="39" height="16"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="13"/>
                                         <color key="textColor" red="0.011764705882352941" green="0.47843137254901963" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                         <nil key="highlightedColor"/>
                                     </label>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="漂流历程" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="IaO-T3-5SA">
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="漂流历程" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="IaO-T3-5SA">
                                         <rect key="frame" x="16" y="265" width="60" height="18"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="15"/>
                                         <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                         <nil key="highlightedColor"/>
                                     </label>
-                                    <view contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Bgp-oM-aYn" userLabel="Line">
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Bgp-oM-aYn" userLabel="Line">
                                         <rect key="frame" x="16" y="291" width="568" height="1"/>
                                         <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="1" id="7kX-1x-td7"/>
                                         </constraints>
                                     </view>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="J0Q-6C-aBJ">
-                                        <rect key="frame" x="16" y="109" width="105" height="30"/>
+                                    <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="J0Q-6C-aBJ">
+                                        <rect key="frame" x="16" y="108" width="105" height="30"/>
                                         <color key="backgroundColor" red="0.01176470588" green="0.47843137250000001" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                         <constraints>
                                             <constraint firstAttribute="width" constant="105" id="B1A-Wp-ceO"/>
@@ -1162,8 +1163,8 @@
                                             <action selector="clickActionBtn:" destination="8pz-eP-OIM" eventType="touchUpInside" id="BRs-kT-67Y"/>
                                         </connections>
                                     </button>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="DpU-17-yaw">
-                                        <rect key="frame" x="16" y="176" width="568" height="63"/>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="DpU-17-yaw">
+                                        <rect key="frame" x="16" y="175" width="568" height="62.5"/>
                                         <string key="text">在科技剧烈改变世界的今天，想要成功，你必须在一切发生之前研究结局。 你必须找到创新的独特方式，让未来不仅仅与众不同，而且更加美好。 从0到1，为自己创造无限的机会与价值！ Paypal创始人、Facebook第一位外部投资者彼得•蒂尔在本书中详细阐述了自己的创业历程与心得，包括如何避免竞争、如何进行垄断、如何发现新的市场。</string>
                                         <fontDescription key="fontDescription" type="system" weight="light" pointSize="13"/>
                                         <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
@@ -1177,6 +1178,7 @@
                                     <constraint firstItem="IKn-Iz-TbM" firstAttribute="leading" secondItem="aF0-YN-nII" secondAttribute="leading" id="6DM-Gw-ZJU"/>
                                     <constraint firstAttribute="trailing" secondItem="P2B-aC-JRt" secondAttribute="trailing" constant="16" id="6b7-a6-ikj"/>
                                     <constraint firstItem="pGz-Vw-2Oy" firstAttribute="leading" secondItem="IKn-Iz-TbM" secondAttribute="trailing" id="8C9-gg-AW6"/>
+                                    <constraint firstItem="P2B-aC-JRt" firstAttribute="leading" secondItem="yfr-Bf-Np9" secondAttribute="trailing" constant="8" id="9cD-FE-OEh"/>
                                     <constraint firstItem="DpU-17-yaw" firstAttribute="top" secondItem="J0Q-6C-aBJ" secondAttribute="bottom" constant="37" id="AOS-V8-bap"/>
                                     <constraint firstItem="aF0-YN-nII" firstAttribute="top" secondItem="yfr-Bf-Np9" secondAttribute="bottom" constant="10.5" id="GBJ-z6-Z1p"/>
                                     <constraint firstItem="IaO-T3-5SA" firstAttribute="top" secondItem="DpU-17-yaw" secondAttribute="bottom" constant="26.5" id="Hfp-IM-lkM"/>
@@ -1220,7 +1222,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Pc1-Qs-DBt" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="25" y="2920"/>
+            <point key="canvasLocation" x="25" y="3034"/>
         </scene>
         <!--放漂-->
         <scene sceneID="GMi-Fo-qUB">
@@ -1316,7 +1318,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="InQ-sT-TbV" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="738" y="2920"/>
+            <point key="canvasLocation" x="745" y="3220"/>
         </scene>
         <!--Tab Bar Controller-->
         <scene sceneID="pVu-T1-hNW">
@@ -1685,23 +1687,6 @@
             </objects>
             <point key="canvasLocation" x="1427" y="1244"/>
         </scene>
-        <!--View Controller-->
-        <scene sceneID="lvH-m9-dNf">
-            <objects>
-                <viewController id="W7j-x1-Ird" sceneMemberID="viewController">
-                    <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="WXE-zh-1YT"/>
-                        <viewControllerLayoutGuide type="bottom" id="Fo3-WK-qaW"/>
-                    </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="58n-5g-ZBQ">
-                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                    </view>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="OfZ-qy-0EH" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-        </scene>
     </scenes>
     <resources>
         <image name="BookSample1" width="102" height="145"/>
@@ -1723,6 +1708,6 @@
         <image name="IconWorld" width="24" height="24"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="yoT-ny-wa4"/>
+        <segue reference="LIz-my-b6G"/>
     </inferredMetricsTieBreakers>
 </document>

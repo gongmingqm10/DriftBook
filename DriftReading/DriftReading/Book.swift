@@ -19,6 +19,17 @@ class Book: NSObject {
     var owner: User?
     var holder: User?
     var events: [Event]?
+
+    class var STATUS_DRIFTING: String {
+        return "drifting"
+    }
+    class var STATUS_STOP: String {
+        return "stop"
+    }
+    
+    class var STATUS_READING: String {
+        return "reading"
+    }
     
     init(json: [String: AnyObject]) {
         self.id = json["id"] as! String

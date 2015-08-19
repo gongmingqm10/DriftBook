@@ -19,13 +19,18 @@ class DiscoveryViewController: UITableViewController {
     let TYPE_READING = "reading"
     
     var selectedBook: Book?
+    var currentType: String?
     
-    override func viewDidAppear(animated: Bool) {
-        loadBooksByType(TYPE_DRIFTING)
+    override func viewDidLoad() {
+        currentType = TYPE_DRIFTING
     }
     
-    private func loadBooksByType(type: String) {
-        driftAPI.getBooks(type, success: { (books) -> Void in
+    override func viewDidAppear(animated: Bool) {
+        loadBooksByType()
+    }
+    
+    private func loadBooksByType() {
+        driftAPI.getBooks(currentType!, success: { (books) -> Void in
             self.books = books
             self.booksTableView.reloadData()
             }) { (error) -> Void in
@@ -34,7 +39,8 @@ class DiscoveryViewController: UITableViewController {
     }
 
     @IBAction func switchSegment(sender: UISegmentedControl) {
-        loadBooksByType(sender.selectedSegmentIndex == 0 ? TYPE_DRIFTING : TYPE_READING)
+        currentType = sender.selectedSegmentIndex == 0 ? TYPE_DRIFTING : TYPE_READING
+        loadBooksByType()
     }
     
     override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {

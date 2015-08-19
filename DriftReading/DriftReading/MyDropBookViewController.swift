@@ -13,6 +13,7 @@ class MyDropBookViewController: UITableViewController {
     @IBOutlet var dropTableView: UITableView!
     let driftAPI = DriftAPI()
     var books: [Book] = []
+    var selectedBook: Book?
 
     override func viewDidLoad() {
         let user = DataUtils.sharedInstance.currentUser()
@@ -22,6 +23,19 @@ class MyDropBookViewController: UITableViewController {
             }) { (error) -> Void in
                 print(error.description)
         }
+    }
+
+    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
+        if segue.identifier == "MyDropBookDetail" {
+            let bookDetailController = segue.destinationViewController as! BookDetailViewController
+            bookDetailController.bookId = selectedBook!.id
+        }
+    }
+
+    override func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
+        self.selectedBook = books[indexPath.row]
+        self.performSegueWithIdentifier("MyDropBookDetail", sender: self)
+
     }
     
     override func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
@@ -37,8 +51,8 @@ class MyDropBookViewController: UITableViewController {
         let book = books[indexPath.row]
         cell.populate(book)
         cell.onButtonTapped = {(book) -> Void in
-            let message = book.status == "stop" ? "重新放漂之后，你的图书将处于可借阅状态。确定继续吗？" : "收漂之后，你的漂友将不能继续阅读你的图书。确定继续吗？"
-            let status = book.status == "stop" ? "drifting" : "stop"
+            let message = book.status == Book.STATUS_STOP ? Constants.MESSAGE_REDROP_BOOK : Constants.MESSAGE_RECEIVE_BOOK
+            let status = book.status == Book.STATUS_STOP ? Book.STATUS_DRIFTING : Book.STATUS_STOP
             
             let alertController = UIAlertController(title: "提示", message: message, preferredStyle: UIAlertControllerStyle.Alert)
             alertController.addAction(UIAlertAction(title: "确定", style: UIAlertActionStyle.Default, handler: {(alert: UIAlertAction!) in

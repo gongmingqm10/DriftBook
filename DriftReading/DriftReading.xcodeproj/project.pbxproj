@@ -51,6 +51,7 @@
 		35FB0F9A1B65DC6900DC1F35 /* CreateBookViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35FB0F991B65DC6900DC1F35 /* CreateBookViewController.swift */; };
 		35FB0F9C1B65ECEF00DC1F35 /* DoubanAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35FB0F9B1B65ECEF00DC1F35 /* DoubanAPI.swift */; };
 		74CEF5F1CB8A8ADC6D4A51C9 /* libPods-DriftReading.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 36D29DC6F72743D40434B755 /* libPods-DriftReading.a */; };
+		AEDF774375058B57822F9342 /* LoadingOverlay.swift in Sources */ = {isa = PBXBuildFile; fileRef = AEDF76EBC16BAB2279642EB0 /* LoadingOverlay.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -128,6 +129,7 @@
 		36D29DC6F72743D40434B755 /* libPods-DriftReading.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-DriftReading.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		6072BF2C2F564DEA58A4C94B /* Pods-DriftReading.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DriftReading.release.xcconfig"; path = "Pods/Target Support Files/Pods-DriftReading/Pods-DriftReading.release.xcconfig"; sourceTree = "<group>"; };
 		76BAF39664270B4D7900093C /* Pods-DriftReading.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DriftReading.debug.xcconfig"; path = "Pods/Target Support Files/Pods-DriftReading/Pods-DriftReading.debug.xcconfig"; sourceTree = "<group>"; };
+		AEDF76EBC16BAB2279642EB0 /* LoadingOverlay.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoadingOverlay.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -283,6 +285,7 @@
 				35FB0F951B65BA1D00DC1F35 /* AcceptBookCell.swift */,
 				350E569A1B663177006D07E9 /* DoubanTableCell.swift */,
 				35457B3D1B667B0F005BE7CB /* MyBookCell.swift */,
+				AEDF76EBC16BAB2279642EB0 /* LoadingOverlay.swift */,
 			);
 			name = views;
 			sourceTree = "<group>";
@@ -511,6 +514,7 @@
 				35FB0F9A1B65DC6900DC1F35 /* CreateBookViewController.swift in Sources */,
 				35457B3C1B666F33005BE7CB /* MyDropBookViewController.swift in Sources */,
 				350E56991B662949006D07E9 /* DoubanBook.swift in Sources */,
+				AEDF774375058B57822F9342 /* LoadingOverlay.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
