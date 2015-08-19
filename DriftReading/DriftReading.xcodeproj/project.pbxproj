@@ -46,6 +46,7 @@
 		35AF51531B6236FC00BFA917 /* Book.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35AF51521B6236FC00BFA917 /* Book.swift */; };
 		35AF51551B62371000BFA917 /* Address.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35AF51541B62371000BFA917 /* Address.swift */; };
 		35B851D21B652AA600EBC7E9 /* BookTableCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35B851D11B652AA600EBC7E9 /* BookTableCell.swift */; };
+		35BD79F41B844E41002432A2 /* MapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35BD79F31B844E41002432A2 /* MapViewController.swift */; };
 		35FB0F961B65BA1D00DC1F35 /* AcceptBookCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35FB0F951B65BA1D00DC1F35 /* AcceptBookCell.swift */; };
 		35FB0F981B65CD7100DC1F35 /* DataUtils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35FB0F971B65CD7100DC1F35 /* DataUtils.swift */; };
 		35FB0F9A1B65DC6900DC1F35 /* CreateBookViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35FB0F991B65DC6900DC1F35 /* CreateBookViewController.swift */; };
@@ -115,6 +116,7 @@
 		35AF51521B6236FC00BFA917 /* Book.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Book.swift; sourceTree = "<group>"; };
 		35AF51541B62371000BFA917 /* Address.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Address.swift; sourceTree = "<group>"; };
 		35B851D11B652AA600EBC7E9 /* BookTableCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BookTableCell.swift; sourceTree = "<group>"; };
+		35BD79F31B844E41002432A2 /* MapViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MapViewController.swift; sourceTree = "<group>"; };
 		35DBF34D1B5D0E8F003A5486 /* DriftReading-Bridge-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "DriftReading-Bridge-Header.h"; sourceTree = "<group>"; };
 		35DF24261B69446D0036C82E /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		35DF24281B69447B0036C82E /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -264,6 +266,7 @@
 				35FB0F991B65DC6900DC1F35 /* CreateBookViewController.swift */,
 				35457B3B1B666F33005BE7CB /* MyDropBookViewController.swift */,
 				3578EF5F1B678CA900F42B7B /* BookDetailViewController.swift */,
+				35BD79F31B844E41002432A2 /* MapViewController.swift */,
 			);
 			name = controllers;
 			sourceTree = "<group>";
@@ -390,6 +393,11 @@
 				TargetAttributes = {
 					3509ECB31B4A89BB00BAECF2 = {
 						CreatedOnToolsVersion = 7.0;
+						SystemCapabilities = {
+							com.apple.BackgroundModes = {
+								enabled = 1;
+							};
+						};
 					};
 					3509ECC71B4A89BB00BAECF2 = {
 						CreatedOnToolsVersion = 7.0;
@@ -514,6 +522,7 @@
 				35FB0F9A1B65DC6900DC1F35 /* CreateBookViewController.swift in Sources */,
 				35457B3C1B666F33005BE7CB /* MyDropBookViewController.swift in Sources */,
 				350E56991B662949006D07E9 /* DoubanBook.swift in Sources */,
+				35BD79F41B844E41002432A2 /* MapViewController.swift in Sources */,
 				AEDF774375058B57822F9342 /* LoadingOverlay.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

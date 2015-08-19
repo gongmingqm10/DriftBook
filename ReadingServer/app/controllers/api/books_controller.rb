@@ -52,6 +52,7 @@ class Api::BooksController < ApiController
                               holder: user,
                               owner: user
                           })
+      Event.create({content: '放漂', category: 'drift', location: user.address, user: user, book: @book})
       render status: :created
     else
       render status: :unauthorized, json: {message: 'User authorized failed'}

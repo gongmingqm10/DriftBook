@@ -24,6 +24,7 @@ class BookDetailViewController: UIViewController {
     @IBOutlet weak var bookHolder: UILabel!
     @IBOutlet weak var bookSummary: UILabel!
     @IBOutlet weak var actionBtn: UIButton!
+    @IBOutlet weak var bookLocation: UILabel!
 
     let driftAPI = DriftAPI()
 
@@ -39,6 +40,7 @@ class BookDetailViewController: UIViewController {
             self.bookSummary.text = book.summary
             self.bookOwner.text = book.owner?.username
             self.bookHolder.text = book.holder?.username
+            self.bookLocation.text = "当前位置：\((book.address?.info())!)"
             if let imageUrl = book.imageUrl {
                 self.bookImage.sd_setImageWithURL(NSURL(string: imageUrl))
             }
@@ -117,6 +119,13 @@ class BookDetailViewController: UIViewController {
         }))
         alertController.addAction(UIAlertAction(title: "取消", style: UIAlertActionStyle.Cancel, handler: nil))
         self.presentViewController(alertController, animated: true, completion: nil)
+    }
+    
+    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
+        if segue.identifier == "MapEventsSegue" {
+            let mapController = segue.destinationViewController as! MapViewController
+            mapController.events = book?.events
+        }
     }
 
     private func showErrorMessage(error: APIError) {

@@ -23,6 +23,7 @@ class DiscoveryViewController: UITableViewController {
     
     override func viewDidLoad() {
         currentType = TYPE_DRIFTING
+        
     }
     
     override func viewDidAppear(animated: Bool) {
