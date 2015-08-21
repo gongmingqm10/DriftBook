@@ -127,4 +127,21 @@ class DriftAPI: NSObject {
         )
     }
     
+    func getMessages(userId: String, success: (conversations: [Conversation]) -> Void, failure: (error: APIError) -> Void) {
+        apiSessionManager.GET("/api/users/\(userId)/conversations", parameters: [],
+            success: { (session: NSURLSessionDataTask!, responseObject: AnyObject!) -> Void in
+                let responseJson = responseObject as! NSArray
+                var conversations: [Conversation] = []
+                for (_, element) in responseJson.enumerate() {
+                    conversations.append(Conversation(json: element as! [String: AnyObject]))
+                }
+                success(conversations: conversations)
+                
+            },
+            failure: { error in
+                failure(error: error)
+            }
+        )
+    }
+    
 }
