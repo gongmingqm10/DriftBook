@@ -1464,7 +1464,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <prototypes>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="74" id="QuR-gU-Opw" customClass="ConversationTableCell" customModule="DriftReading" customModuleProvider="target">
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="ConversationTableCell" rowHeight="74" id="QuR-gU-Opw" customClass="ConversationTableCell" customModule="DriftReading" customModuleProvider="target">
                                 <rect key="frame" x="0.0" y="86" width="600" height="74"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="QuR-gU-Opw" id="BYf-Hn-5K3">
@@ -1484,9 +1484,9 @@
                                             <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                             <nil key="highlightedColor"/>
                                         </label>
-                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="求漂《傲慢与偏见》" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hrO-6j-FGm">
-                                            <rect key="frame" x="72" y="36" width="135" height="18"/>
-                                            <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="求漂《傲慢与偏见》" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hrO-6j-FGm">
+                                            <rect key="frame" x="72" y="36" width="520" height="18"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="13"/>
                                             <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
                                             <nil key="highlightedColor"/>
                                         </label>
@@ -1504,6 +1504,7 @@
                                         <constraint firstItem="65O-UI-f0O" firstAttribute="top" secondItem="BYf-Hn-5K3" secondAttribute="topMargin" constant="4" id="hoj-tY-NjT"/>
                                         <constraint firstItem="65O-UI-f0O" firstAttribute="leading" secondItem="BYf-Hn-5K3" secondAttribute="leadingMargin" constant="8" id="l1k-0B-GIT"/>
                                         <constraint firstItem="ABv-Ud-kxc" firstAttribute="leading" secondItem="65O-UI-f0O" secondAttribute="trailing" constant="8" id="nS6-9h-oSm"/>
+                                        <constraint firstItem="hrO-6j-FGm" firstAttribute="trailing" secondItem="Zes-Kc-Hp0" secondAttribute="trailing" id="qJp-wP-6Xe"/>
                                         <constraint firstItem="Zes-Kc-Hp0" firstAttribute="top" secondItem="ABv-Ud-kxc" secondAttribute="top" id="wZD-FL-f2l"/>
                                         <constraint firstItem="hrO-6j-FGm" firstAttribute="top" secondItem="ABv-Ud-kxc" secondAttribute="bottom" constant="6" id="yny-0I-8dp"/>
                                     </constraints>

@@ -17,6 +17,14 @@ class ConversationTableCell: UITableViewCell {
     
     func populate(conversation: Conversation) {
         
+        userName.text = conversation.user.username
+        if let avatarUrl = conversation.user.avatar {
+            userAvatar.sd_setImageWithURL(NSURL(string: avatarUrl))
+        }
+        
+        let message = conversation.messages.first
+        latestContent.text = message?.content
+        
     }
     
 }
