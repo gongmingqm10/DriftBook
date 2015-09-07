@@ -8,7 +8,7 @@
 
 import UIKit
 
-class LoginViewController: ViewController {
+class LoginViewController: ViewController, UITextFieldDelegate {
     
     let driftAPI = DriftAPI()
     
@@ -19,6 +19,7 @@ class LoginViewController: ViewController {
         if let _ = NSUserDefaults.standardUserDefaults().valueForKey(Constants.UserKey) {
             self.performSegueWithIdentifier("HomeSegue", sender: self)
         }
+        self.passwordTextField.delegate = self
     }
     
     @IBAction func loginAction(sender: AnyObject) {
@@ -32,8 +33,11 @@ class LoginViewController: ViewController {
                 alertController.addAction(UIAlertAction(title: "确定", style: UIAlertActionStyle.Default, handler: nil))
                 self.presentViewController(alertController, animated: true, completion: nil)
         }
-        
-        
     }
     
+    func textFieldShouldReturn(textField: UITextField) -> Bool {
+        textField.resignFirstResponder()
+        return true
+    }
+
 }

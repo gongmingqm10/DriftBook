@@ -15,6 +15,13 @@ class ConversationTableCell: UITableViewCell {
     @IBOutlet weak var latestContent: UILabel!
     @IBOutlet weak var conversationTime: UILabel!
     
+    override func layoutSubviews() {
+        userAvatar.layer.borderWidth = 1
+        userAvatar.layer.borderColor = UIColor.grayColor().CGColor
+        userAvatar.layer.cornerRadius = userAvatar.frame.size.width / 2.0
+        userAvatar.clipsToBounds = true
+    }
+    
     func populate(conversation: Conversation) {
         
         userName.text = conversation.user.username

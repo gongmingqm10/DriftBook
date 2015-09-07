@@ -36,7 +36,6 @@
 		3528FAC21B7CAE630014F937 /* Event.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3528FAC11B7CAE630014F937 /* Event.swift */; };
 		3531D4C11B4AF46F006DE554 /* DiscoveryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3531D4C01B4AF46F006DE554 /* DiscoveryViewController.swift */; };
 		3531D4C31B4AF4D0006DE554 /* AcceptBookViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3531D4C21B4AF4D0006DE554 /* AcceptBookViewController.swift */; };
-		3531D4C51B4AF4FA006DE554 /* MessageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3531D4C41B4AF4FA006DE554 /* MessageViewController.swift */; };
 		3531D4C71B4AF526006DE554 /* MineViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3531D4C61B4AF526006DE554 /* MineViewController.swift */; };
 		35457B3C1B666F33005BE7CB /* MyDropBookViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35457B3B1B666F33005BE7CB /* MyDropBookViewController.swift */; };
 		35457B3E1B667B0F005BE7CB /* MyBookCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35457B3D1B667B0F005BE7CB /* MyBookCell.swift */; };
@@ -51,6 +50,11 @@
 		35AF51551B62371000BFA917 /* Address.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35AF51541B62371000BFA917 /* Address.swift */; };
 		35B851D21B652AA600EBC7E9 /* BookTableCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35B851D11B652AA600EBC7E9 /* BookTableCell.swift */; };
 		35BD79F41B844E41002432A2 /* MapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35BD79F31B844E41002432A2 /* MapViewController.swift */; };
+		35DC4F771B9B2F1D0046C2C9 /* UIImage+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35DC4F761B9B2F1D0046C2C9 /* UIImage+Extension.swift */; };
+		35DC4F791B9BCFBA0046C2C9 /* ChattingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35DC4F781B9BCFBA0046C2C9 /* ChattingViewController.swift */; };
+		35DC4F7B1B9BE8DD0046C2C9 /* MessageFriendCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35DC4F7A1B9BE8DD0046C2C9 /* MessageFriendCell.swift */; };
+		35DC4F7D1B9BE8E80046C2C9 /* MessageMineCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35DC4F7C1B9BE8E80046C2C9 /* MessageMineCell.swift */; };
+		35DC4F7E1B9C0B630046C2C9 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3528FAA11B7C8DCF0014F937 /* QuartzCore.framework */; };
 		35FB0F961B65BA1D00DC1F35 /* AcceptBookCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35FB0F951B65BA1D00DC1F35 /* AcceptBookCell.swift */; };
 		35FB0F981B65CD7100DC1F35 /* DataUtils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35FB0F971B65CD7100DC1F35 /* DataUtils.swift */; };
 		35FB0F9A1B65DC6900DC1F35 /* CreateBookViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35FB0F991B65DC6900DC1F35 /* CreateBookViewController.swift */; };
@@ -110,7 +114,6 @@
 		3528FAC11B7CAE630014F937 /* Event.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Event.swift; sourceTree = "<group>"; };
 		3531D4C01B4AF46F006DE554 /* DiscoveryViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DiscoveryViewController.swift; sourceTree = "<group>"; };
 		3531D4C21B4AF4D0006DE554 /* AcceptBookViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AcceptBookViewController.swift; sourceTree = "<group>"; };
-		3531D4C41B4AF4FA006DE554 /* MessageViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MessageViewController.swift; sourceTree = "<group>"; };
 		3531D4C61B4AF526006DE554 /* MineViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MineViewController.swift; sourceTree = "<group>"; };
 		35457B3B1B666F33005BE7CB /* MyDropBookViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MyDropBookViewController.swift; sourceTree = "<group>"; };
 		35457B3D1B667B0F005BE7CB /* MyBookCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MyBookCell.swift; sourceTree = "<group>"; };
@@ -126,6 +129,10 @@
 		35B851D11B652AA600EBC7E9 /* BookTableCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BookTableCell.swift; sourceTree = "<group>"; };
 		35BD79F31B844E41002432A2 /* MapViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MapViewController.swift; sourceTree = "<group>"; };
 		35DBF34D1B5D0E8F003A5486 /* DriftReading-Bridge-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "DriftReading-Bridge-Header.h"; sourceTree = "<group>"; };
+		35DC4F761B9B2F1D0046C2C9 /* UIImage+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIImage+Extension.swift"; sourceTree = "<group>"; };
+		35DC4F781B9BCFBA0046C2C9 /* ChattingViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChattingViewController.swift; sourceTree = "<group>"; };
+		35DC4F7A1B9BE8DD0046C2C9 /* MessageFriendCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MessageFriendCell.swift; sourceTree = "<group>"; };
+		35DC4F7C1B9BE8E80046C2C9 /* MessageMineCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MessageMineCell.swift; sourceTree = "<group>"; };
 		35DF24261B69446D0036C82E /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		35DF24281B69447B0036C82E /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		35DF242A1B6944880036C82E /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -147,6 +154,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				35DC4F7E1B9C0B630046C2C9 /* QuartzCore.framework in Frameworks */,
 				3528FABF1B7C9AFD0014F937 /* libstdc++.6.0.9.dylib in Frameworks */,
 				3528FAC01B7C9AFD0014F937 /* libz.1.dylib in Frameworks */,
 				3528FAB61B7C90320014F937 /* Security.framework in Frameworks */,
@@ -229,6 +237,7 @@
 		3509ECB61B4A89BB00BAECF2 /* DriftReading */ = {
 			isa = PBXGroup;
 			children = (
+				35DC4F751B9B2EE50046C2C9 /* extensions */,
 				3528FAAE1B7C8FBC0014F937 /* AMap.bundle */,
 				35B851D01B652A9800EBC7E9 /* views */,
 				35AF514D1B61EE2E00BFA917 /* data */,
@@ -271,13 +280,13 @@
 				3509ECE81B4AB4B400BAECF2 /* RegisterViewController.swift */,
 				3531D4C01B4AF46F006DE554 /* DiscoveryViewController.swift */,
 				3531D4C21B4AF4D0006DE554 /* AcceptBookViewController.swift */,
-				3531D4C41B4AF4FA006DE554 /* MessageViewController.swift */,
 				3531D4C61B4AF526006DE554 /* MineViewController.swift */,
 				35FB0F991B65DC6900DC1F35 /* CreateBookViewController.swift */,
 				35457B3B1B666F33005BE7CB /* MyDropBookViewController.swift */,
 				3578EF5F1B678CA900F42B7B /* BookDetailViewController.swift */,
 				35BD79F31B844E41002432A2 /* MapViewController.swift */,
 				35466E0A1B8753FB004FFFAF /* ConversationViewController.swift */,
+				35DC4F781B9BCFBA0046C2C9 /* ChattingViewController.swift */,
 			);
 			name = controllers;
 			sourceTree = "<group>";
@@ -301,8 +310,18 @@
 				35457B3D1B667B0F005BE7CB /* MyBookCell.swift */,
 				AEDF76EBC16BAB2279642EB0 /* LoadingOverlay.swift */,
 				35466E081B8753CD004FFFAF /* ConversationTableCell.swift */,
+				35DC4F7A1B9BE8DD0046C2C9 /* MessageFriendCell.swift */,
+				35DC4F7C1B9BE8E80046C2C9 /* MessageMineCell.swift */,
 			);
 			name = views;
+			sourceTree = "<group>";
+		};
+		35DC4F751B9B2EE50046C2C9 /* extensions */ = {
+			isa = PBXGroup;
+			children = (
+				35DC4F761B9B2F1D0046C2C9 /* UIImage+Extension.swift */,
+			);
+			name = extensions;
 			sourceTree = "<group>";
 		};
 		5D9BB26E563840D471803C40 /* Frameworks */ = {
@@ -508,6 +527,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				35AF514C1B61E86A00BFA917 /* User.swift in Sources */,
+				35DC4F791B9BCFBA0046C2C9 /* ChattingViewController.swift in Sources */,
 				3509ECE71B4AB45D00BAECF2 /* LoginViewController.swift in Sources */,
 				35457B3E1B667B0F005BE7CB /* MyBookCell.swift in Sources */,
 				35085CD61B5D35F500DE8B9C /* APISessionManager.swift in Sources */,
@@ -530,12 +550,14 @@
 				35466E0B1B8753FB004FFFAF /* ConversationViewController.swift in Sources */,
 				3531D4C11B4AF46F006DE554 /* DiscoveryViewController.swift in Sources */,
 				35AF51511B61F24300BFA917 /* Constants.swift in Sources */,
-				3531D4C51B4AF4FA006DE554 /* MessageViewController.swift in Sources */,
 				35AF51551B62371000BFA917 /* Address.swift in Sources */,
 				35085CD81B5D373C00DE8B9C /* APIError.swift in Sources */,
+				35DC4F7B1B9BE8DD0046C2C9 /* MessageFriendCell.swift in Sources */,
 				35466E091B8753CD004FFFAF /* ConversationTableCell.swift in Sources */,
 				35FB0F9A1B65DC6900DC1F35 /* CreateBookViewController.swift in Sources */,
+				35DC4F7D1B9BE8E80046C2C9 /* MessageMineCell.swift in Sources */,
 				35457B3C1B666F33005BE7CB /* MyDropBookViewController.swift in Sources */,
+				35DC4F771B9B2F1D0046C2C9 /* UIImage+Extension.swift in Sources */,
 				350E56991B662949006D07E9 /* DoubanBook.swift in Sources */,
 				35466E051B874BE6004FFFAF /* Message.swift in Sources */,
 				35BD79F41B844E41002432A2 /* MapViewController.swift in Sources */,
@@ -682,6 +704,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				FRAMEWORK_SEARCH_PATHS = "$(SRCROOT)/";
 				INFOPLIST_FILE = DriftReading/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				OTHER_LDFLAGS = (
 					"$(inherited)",
@@ -704,6 +727,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = org.gongmingqm10.DriftReading;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_OBJC_BRIDGING_HEADER = "DriftReading/DriftReading-Bridge-Header.h";
+				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
 		};
@@ -714,6 +738,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				FRAMEWORK_SEARCH_PATHS = "$(SRCROOT)/";
 				INFOPLIST_FILE = DriftReading/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				OTHER_LDFLAGS = (
 					"$(inherited)",
@@ -737,6 +762,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_OBJC_BRIDGING_HEADER = "DriftReading/DriftReading-Bridge-Header.h";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;
 		};

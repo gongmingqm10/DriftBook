@@ -15,6 +15,11 @@ class ConversationViewController: UITableViewController {
     var conversations: [Conversation] = []
     var selectedConversation: Conversation?
     
+    override func viewDidLoad() {
+        self.conversationTable.rowHeight = UITableViewAutomaticDimension
+        self.conversationTable.estimatedRowHeight = 80.0
+    }
+    
     override func viewDidAppear(animated: Bool) {
         let user = DataUtils.sharedInstance.currentUser()
         driftAPI.getMessages(user.userId, success: { (conversations) -> Void in
@@ -25,12 +30,20 @@ class ConversationViewController: UITableViewController {
         }
     }
     
-    override func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return conversations.count
+    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
+        if segue.identifier == "ChattingSegue" {
+            let chattingViewController = segue.destinationViewController as! ChattingViewController
+            chattingViewController.messages = selectedConversation!.messages
+        }
     }
     
-    override func tableView(tableView: UITableView, heightForRowAtIndexPath indexPath: NSIndexPath) -> CGFloat {
-        return 74
+    override func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
+        self.selectedConversation = conversations[indexPath.row]
+        self.performSegueWithIdentifier("ChattingSegue", sender: self)
+    }
+    
+    override func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        return conversations.count
     }
     
     override func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
