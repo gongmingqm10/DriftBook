@@ -10,7 +10,7 @@ import Foundation
 
 class DriftAPI: NSObject {
     
-    let API_HOST = "http://10.203.21.115:3000"
+    let API_HOST = "http://10.203.22.44:3000"
     
     var apiSessionManager: APISessionManager
     

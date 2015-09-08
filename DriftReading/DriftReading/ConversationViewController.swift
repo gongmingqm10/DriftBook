@@ -32,8 +32,8 @@ class ConversationViewController: UITableViewController {
     
     override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
         if segue.identifier == "ChattingSegue" {
-            let chattingViewController = segue.destinationViewController as! ChattingViewController
-            chattingViewController.messages = selectedConversation!.messages
+            let messageViewController = segue.destinationViewController as! MessageViewController
+            messageViewController.messages = selectedConversation!.messages
         }
     }
     
